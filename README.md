@@ -10,4 +10,4 @@ Les Vétérans
 Projet Web | 582-518MO </br>
 [Lien des intructions du projet](https://tim-montmorency.com/timdoc/582-518MO/projet/)
 ## Tâches
-[Lien de l'espace de travail Trello](https://trello.com/w/projetsessionaut23)
+[Lien de l'espace de travail Trello](https://trello.com/b/X3imCLyW/les-impatients-les-v%C3%A9t%C3%A9rans)
