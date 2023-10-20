@@ -1,5 +1,40 @@
 body{
+    height: 100vh;
     background-repeat: no-repeat;
     background: rgb(209,200,228);
     background: linear-gradient(0deg, rgba(209,200,228,1) 0%, rgba(255,255,255,1) 50%, rgba(209,200,228,1) 100%);
+}
+
+h4{
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+nav{
+    padding-top: 5px;
+    background-color: #EBEBEB;
+    height: 60px;
+    box-shadow: 1px 1px 7px;
+}
+
+.warning{
+    padding: 5px 0 5px 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ae9dc7;
+    border-radius: 0 0 5px 5px;;
+}
+
+.warning h4 a{
+    color: #ebebeb;
+}
+
+footer{
+    position: absolute;
+   bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #D1C8E4;
+    color: white;
+    text-align: center;
 }
