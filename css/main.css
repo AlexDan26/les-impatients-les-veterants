@@ -28,3 +28,13 @@ nav{
 .warning h4 a{
     color: #ebebeb;
 }
+
+footer{
+    position: absolute;
+   bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #D1C8E4;
+    color: white;
+    text-align: center;
+}
