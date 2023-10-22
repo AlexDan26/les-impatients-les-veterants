@@ -1,5 +1,5 @@
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background: rgb(209,200,228);
     background: linear-gradient(0deg, rgba(209,200,228,1) 0%, rgba(255,255,255,1) 50%, rgba(209,200,228,1) 100%);
@@ -14,6 +14,15 @@ nav{
     padding-top: 5px;
     background-color: #EBEBEB;
     box-shadow: 1px 1px 7px;
+}
+footer{
+    position: absolute;
+   bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: #D1C8E4;
+    color: white;
+    text-align: center;
 }
 
 .warning{
@@ -47,5 +56,5 @@ nav{
 }
 main{
     height: 100%;
-    overflow: auto;
+    margin-bottom: 60px;
 }
