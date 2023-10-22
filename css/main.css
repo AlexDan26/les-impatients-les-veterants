@@ -45,6 +45,7 @@ nav{
     margin-top: 60px;
     text-align: center;
 }
+<<<<<<< Updated upstream
 .retour{
     border-radius: 15px;
     padding: 10px;
@@ -57,4 +58,9 @@ nav{
 
 .globe{
     margin-left: 15vw;
+=======
+main{
+    height: 100%;
+    position: absolute;
+>>>>>>> Stashed changes
 }
