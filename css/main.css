@@ -45,22 +45,7 @@ nav{
     margin-top: 60px;
     text-align: center;
 }
-<<<<<<< Updated upstream
-.retour{
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #D1C8E4;
-}
-.navbar-brand h4:hover{
-    color: #AE9DC7;
-}
-
-.globe{
-    margin-left: 15vw;
-=======
 main{
     height: 100%;
-    position: absolute;
->>>>>>> Stashed changes
+    overflow: auto;
 }
