@@ -1,6 +1,21 @@
-.article { height: 100%; }
+.article {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  &.title{
+    justify-content: center;
+    text-transform: uppercase;
+}
+&.sub_title{
+    justify-content: center;
+    text-transform: uppercase;
+}
 
- .baniere { 
-    background-size: cover,
-    width
- } 
+}
+
+.hero {
+  width: 100%;
+  margin-bottom: 5%;
+  box-shadow: 5px -10px 10px rgba(0, 0, 0, 0.2);
+}

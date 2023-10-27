@@ -15,16 +15,17 @@ h4{
 nav{
     padding-top: 5px;
     background-color: #EBEBEB;
-    box-shadow: 1px 1px 7px;
+   
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 footer{
-   
-   bottom: 0px;
-    height: 60px;
+    bottom: 0px;
+    
     width: 100%;
     background-color: #D1C8E4;
     color: white;
     text-align: center;
+    box-shadow: 5px -10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .warning{
