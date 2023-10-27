@@ -1,0 +1,69 @@
+.article {
+  height: 100%;
+}
+
+.article .baniere {
+  background-size: cover;
+}
+
+body {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background: rgb(209, 200, 228);
+  background: linear-gradient(0deg, rgb(209, 200, 228) 0%, rgb(255, 255, 255) 50%, rgb(209, 200, 228) 100%);
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+}
+
+nav {
+  padding-top: 5px;
+  background-color: #EBEBEB;
+  box-shadow: 1px 1px 7px;
+}
+
+footer {
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: #D1C8E4;
+  color: white;
+  text-align: center;
+}
+
+.warning {
+  padding: 5px 0 5px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ae9dc7;
+  border-radius: 0 0 5px 5px;
+}
+
+.warning h4 a {
+  color: #ebebeb;
+}
+
+.message404 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.message404 > svg {
+  margin: 0 10px;
+}
+
+.texte404 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  margin-bottom: 60px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

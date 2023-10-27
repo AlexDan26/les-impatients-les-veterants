@@ -1,11 +1,1 @@
-{
-	"version": 3,
-	"file": "notices.css",
-	"sources": [
-		"notices.scss",
-		"common/_variables.scss",
-		"notices/_core.scss"
-	],
-	"names": [],
-	"mappings": "AEAA,AAAA,YAAY,CAAC;EACZ,QAAQ,EAAE,QAAQ,GAClB;;AAED,AAAA,kBAAkB,CAAC;EAClB,eAAe,EAAE,IAAI,GACrB"
-}
+{"version":3,"sources":["notices/_core.scss","notices.css"],"names":[],"mappings":"AAAA;EACC,kBAAA;ACCD;;ADEA;EACC,qBAAA;ACCD","file":"notices.css"}
