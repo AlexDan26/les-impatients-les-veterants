@@ -4,18 +4,22 @@
   justify-content: center;
   text-align: left;
   margin-bottom: 2%;
-  &.title{
+  &.title {
     justify-content: center;
     text-transform: uppercase;
     border-bottom: 10px solid rgba(235, 235, 235, 1);
-    font-weight: bold ;
-}
-&.sub_title{
+    font-weight: bold;
+  }
+  &.sub_title {
     justify-content: center;
     text-transform: uppercase;
+  }
 }
-
-}
+.top_title {
+  color:  rgb(255, 255, 255);
+  font-style: italic;
+  }
+  
 
 .hero {
   width: 100%;

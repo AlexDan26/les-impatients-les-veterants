@@ -16,6 +16,11 @@
   text-transform: uppercase;
 }
 
+.top_title {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+}
+
 .hero {
   width: 100%;
   margin-bottom: 6%;
