@@ -3,10 +3,13 @@
   display: flex;
   justify-content: center;
   text-align: left;
+  margin-bottom: 2%;
 }
 .article.title {
   justify-content: center;
   text-transform: uppercase;
+  border-bottom: 10px solid rgb(235, 235, 235);
+  font-weight: bold;
 }
 .article.sub_title {
   justify-content: center;
@@ -15,8 +18,8 @@
 
 .hero {
   width: 100%;
-  margin-bottom: 5%;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 6%;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
