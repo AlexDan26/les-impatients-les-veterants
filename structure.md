@@ -1,13 +1,27 @@
+# Accueil
+## Modèles:accueil.php
+## Type de contenu: nouvelle, services, temoignages
+### hero
+### nouvelles
+#### ACF:Title
+#### ACF:SmallDescrip
+### services
+##### ACF:Title
+##### ACF:SmallDescrip
+### temoignages
+##### ACF:Name
+##### ACF:Text
+
 # À propos
 ## Type de contenu: Article
 ## Modèles:article.php
 ## Composantes:
 ## hero
 #### ACF:Title
-#### ACF:Mission
+#### ACF:image
 ### description_base
-#### ACF:Title
-#### ACF:But
+#### ACF:sousTitle
+#### ACF:mission
 
  
 
@@ -19,23 +33,35 @@
 ## Composantes:
 ### hero
 #### ACF:Title
-#### ACF:employé
+#### ACF:image
+
+ 
+
 ### description_base
-#### ACF:Title
+#### ACF:Name
+#### ACF:poste
 #### ACF:information
 
  
 
+ 
+
 # Histoire
-## Type de contenu: Article
-## Modèles:article.php
+## Type de contenu:custom field
+## Modèles:histoire.php
 ## Composantes:
 ## hero
-#### ACF:Title
-#### ACF: temps
+#### ACF:title
+#### ACF:image
+#### ACF:evenement
+
+ 
+
+ 
+
 ### description_base
-#### ACF:Title
-#### ACF:resumé
+#### ACF:date
+#### ACF:evenement
 
 # serviceHub
 ## TYPE DE CONTENU: categorieService
@@ -52,7 +78,7 @@
 # 404
 ## TYPE DE CONTENU: texte, icones
 
-# PAGE 1
+# Nouvelle
 
 ## TYPE DE CONTENU (CPT): NOUVELLE
 
@@ -78,7 +104,7 @@
 
  
 
-# PAGE 2
+# NouvelleHub
 
 ## TYPE DE CONTENU (CPT): HUB NOUVELLES
 
@@ -100,7 +126,7 @@
 
  
 
-# PAGE 3
+# FAQ
 
 ## TYPE DE CONTENU (CPT): FAQ
 
