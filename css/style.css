@@ -27,8 +27,16 @@
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+.section_photo {
+  margin: 10px;
+}
+
 .photo {
+  max-height: 350px;
   width: 100%;
+  border-radius: 8%;
+  border: 8px solid white;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
