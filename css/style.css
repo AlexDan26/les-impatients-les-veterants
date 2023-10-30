@@ -69,11 +69,27 @@ nav {
 }
 
 footer {
-  width: 100%;
   background-color: #D1C8E4;
   color: white;
   text-align: center;
-  box-shadow: 5px -10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -5px 5px 2px rgba(0, 0, 0, 0.139);
+  /* .logo{
+       background-color: #ffffff;
+       position: absolute;
+       left: 50%;
+       width: 20%;
+       border-radius: 50%;
+       box-shadow: black;
+       box-shadow: 0px -5px 5px 2px rgba(0, 0, 0, 0.139);
+
+
+       img{
+           background-color: #ae9dc7;
+           padding: 10px;
+           border-radius: 50%;
+           z-index: -1;
+       }
+   }*/
 }
 footer .buttonspace {
   padding: 5px;
@@ -106,11 +122,7 @@ footer .sponsor {
   margin-right: 20px;
 }
 footer .contact {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 20px;
+  margin: 10px 5px;
 }
 
 .warning {
