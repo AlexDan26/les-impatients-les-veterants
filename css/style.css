@@ -43,11 +43,22 @@
 .card {
   margin: 10px auto 10px;
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-  background-color: #BADBF3;
+  background-color: #FDDDe3;
 }
 
 .card-body {
-  background-color: #1069a9;
+  background-color: #FDDDe3;
+}
+
+.cardService {
+  margin: 0 5px 0 5px;
+}
+.cardService img {
+  display: none;
+}
+
+.footerService {
+  margin-top: 25vh;
 }
 
 body {

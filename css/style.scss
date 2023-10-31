@@ -1,5 +1,7 @@
 @use "partials/nouvelles";
 @use "partials/hub_nouvelle";
+@use "partials/card";
+@use "partials/hub_services";
 
 body{
     min-height: 100vh;
