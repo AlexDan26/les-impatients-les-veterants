@@ -2,7 +2,6 @@
     margin: 0 5px 0 5px;
     img{
         margin-top: 15px;
-        display: block;
     }
 }
 
@@ -10,6 +9,7 @@
     color: #ffffff;
     height:70px;
     background-image: url("../../assets/imgServiceHero.jpg");
+    background-size: cover;
 }
 
 .footerService{
