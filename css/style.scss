@@ -1,7 +1,12 @@
+/*Partials des pages*/
 @use "partials/nouvelles";
 @use "partials/hub_nouvelle";
-@use "partials/card";
+@use "partials/erreur";
 @use "partials/hub_services";
+/*Partials de composantes*/
+@use "partials/card";
+@use "partials/button";
+@use "partials/hero";
 
 body{
     min-height: 100vh;
