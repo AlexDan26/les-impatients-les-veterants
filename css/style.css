@@ -94,7 +94,7 @@ main {
   border-radius: 0% 0% 8% 8%;
 }
 .card.first {
-  box-sizing: 23%;
+  color: aliceblue;
 }
 
 .card-body {
