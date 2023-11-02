@@ -1,12 +1,18 @@
 .card {
     margin: 10px auto 10px;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 0% 0% 10% 10%;
+    border-radius: 0% 0% 8% 8%;
+    &.first {
+        box-sizing: 23%;
+      }
+      
 }
-
+.hidden {
+    overflow: hidden;
+  }
 
 .card-body {
-   
+    border-radius: 0% 0% 10% 10%;
     &.rose {
         background-color: #FDDDe3;
       }
