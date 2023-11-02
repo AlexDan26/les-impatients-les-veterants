@@ -1,5 +1,5 @@
+/*Partials des pages*/
 .article {
-  height: 100%;
   display: flex;
   justify-content: center;
   text-align: left;
@@ -21,12 +21,6 @@
   font-style: italic;
 }
 
-.hero {
-  width: 100%;
-  margin-bottom: 6%;
-  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-}
-
 .section_photo {
   margin: 10px;
   max-height: 350px;
@@ -40,25 +34,74 @@
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card {
-  margin: 10px auto 10px;
-  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-  background-color: #FDDDe3;
+.message404 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
 }
 
-.card-body {
-  background-color: #FDDDe3;
+.message404 > svg {
+  margin: 0 10px;
+}
+
+.texte404 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  margin-bottom: 60px;
+  width: 100%;
 }
 
 .cardService {
   margin: 0 5px 0 5px;
 }
 .cardService img {
-  display: none;
+  margin-top: 15px;
+}
+
+.heroService {
+  color: #ffffff;
+  height: 70px;
+  background-image: url("../../assets/imgServiceHero.jpg");
+  background-size: cover;
 }
 
 .footerService {
   margin-top: 25vh;
+}
+
+/*Partials de composantes*/
+.card {
+  margin: 10px auto 10px;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body.rose {
+  background-color: #FDDDe3;
+}
+.card-body.bleu {
+  background-color: #BADBF3;
+}
+.card-body.vert {
+  background-color: #EAFDE0;
+}
+
+button {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 90px;
+  border: none;
+  background-color: #D1CBE4;
+}
+
+.hero {
+  width: 100%;
+  margin-bottom: 6%;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -169,4 +212,7 @@ main {
   height: 100%;
   margin-bottom: 60px;
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
