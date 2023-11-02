@@ -24,7 +24,8 @@ h4{
 nav{
     padding-top: 5px;
     background-color: #EBEBEB;
-   
+    display: flex;
+    justify-content: space-between;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
 footer{     
