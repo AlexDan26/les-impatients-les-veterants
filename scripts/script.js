@@ -31,17 +31,18 @@ let hidden  = true;
 
 
 cacher.style.display = 'none';
-
+cacher.style.overflow= 'hidden';
 
 btn_plus.addEventListener('click', () => {
   
   if(hidden){
     cacher.style.display = 'block';
-    cacher.style.overflow= 'hidden';
+    cacher.style.overflow= 'visible';
     hidden = false;
   } 
   else{
     cacher.style.display = 'none';
+    cacher.style.overflow= 'hidden';
     hidden = true;
   }
 })

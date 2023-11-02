@@ -37,6 +37,15 @@
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+.hidden {
+  overflow: hidden;
+  display: none;
+}
+.hidden:active {
+  overflow: visible;
+  display: block;
+}
+
 .message404 {
   display: flex;
   justify-content: center;
@@ -94,11 +103,23 @@ main {
 .card-body.rose {
   background-color: #FDDDe3;
 }
+.card-body.rose:hover {
+  background-color: #fabfca;
+  color: black;
+}
 .card-body.bleu {
   background-color: #BADBF3;
 }
+.card-body.bleu:hover {
+  background-color: #97cbf0;
+  color: black;
+}
 .card-body.vert {
   background-color: #EAFDE0;
+}
+.card-body.vert:hover {
+  background-color: #d4fbc0;
+  color: black;
 }
 
 button {

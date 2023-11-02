@@ -13,11 +13,26 @@
     border-radius: 0% 0% 10% 10%;
     &.rose {
         background-color: #FDDDe3;
-      }
+        &:hover {
+            background-color: #fabfca;
+            color: black;
+        }
+    }
+      
       &.bleu {
         background-color: #BADBF3;
-      }
+        &:hover {
+            background-color: #97cbf0;
+            color: black;
+        }
+    }
+     
       &.vert {
         background-color: #EAFDE0;
-      }
-}
+        &:hover {
+            background-color: #d4fbc0;
+            color: black;
+        }
+    }
+      
+ }      
