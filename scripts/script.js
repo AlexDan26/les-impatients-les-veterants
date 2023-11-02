@@ -21,3 +21,33 @@ burger.addEventListener("mouseout", (event) => {
 .timeline()
 .to(".burger",{scale: 1, duration: 1.5, yoyo: true})
 });
+
+
+
+
+let btn_plus    = document.querySelector('.plus');
+let cacher   = document.querySelector('.hidden');
+let hidden  = true;
+
+
+cacher.style.display = 'none';
+
+
+btn_plus.addEventListener('click', () => {
+  
+  if(hidden){
+    cacher.style.display = 'block';
+    hidden = false;
+  } 
+  else{
+    cacher.style.display = 'none';
+    hidden = true;
+  }
+})
+
+
+
+
+
+
+
