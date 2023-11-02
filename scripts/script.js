@@ -37,6 +37,7 @@ btn_plus.addEventListener('click', () => {
   
   if(hidden){
     cacher.style.display = 'block';
+    cacher.style.overflow= 'hidden';
     hidden = false;
   } 
   else{
