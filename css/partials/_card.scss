@@ -2,38 +2,50 @@
     margin: 10px auto 10px;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
     border-radius: 0% 0% 8% 8%;
-    &.first {
-        color: aliceblue;
-       
-      }
-      
+
+    .card-body {
+        border-radius: 0% 0% 20px 20px;
+
+        .card-title {
+            padding: 10px 10px 0 10px;
+        }
+
+        .card-text {
+            padding: 10px;
+        }
+
+        &.first {
+            color: aliceblue;
+
+        }
+
+
+        &.rose {
+            background-color: #FDDDe3;
+
+            &:hover {
+                background-color: #fabfca;
+                color: black;
+            }
+        }
+
+        &.bleu {
+            background-color: #BADBF3;
+
+            &:hover {
+                background-color: #97cbf0;
+                color: black;
+            }
+        }
+
+        &.vert {
+            background-color: #EAFDE0;
+
+            &:hover {
+                background-color: #d4fbc0;
+                color: black;
+            }
+        }
+    }
+
 }
-
-
-.card-body {
-    border-radius: 0% 0% 10% 10%;
-    &.rose {
-        background-color: #FDDDe3;
-        &:hover {
-            background-color: #fabfca;
-            color: black;
-        }
-    }
-      
-      &.bleu {
-        background-color: #BADBF3;
-        &:hover {
-            background-color: #97cbf0;
-            color: black;
-        }
-    }
-     
-      &.vert {
-        background-color: #EAFDE0;
-        &:hover {
-            background-color: #d4fbc0;
-            color: black;
-        }
-    }
-      
- }      
