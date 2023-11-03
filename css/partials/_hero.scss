@@ -1,15 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+$font: 'Nunito';
+$font-color: #D1C8E4;
+$background: url('https://images.unsplash.com/photo-1616001089004-04948fc0e6c1?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+$transition: .6s;
+$font-size: 5vw;
+
+@mixin center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero{
+
+}
+
+.main-container{
+  color: $font-color;
+}
+
+.first-container, .second-container,.propos-container,.equipe-container,.faq-container{
+  cursor: pointer;
+  position: relative;
+  
+  h1{
+    position: relative;
+    letter-spacing: 2px;
+    font-size: $font-size;
+  }
+}
+.share{
+  margin-bottom: 15px;
+}
+  
+span{
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  &:after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    transition: $transition;
+    z-index: -5;
+}
+}
+@for $i from 1 through 12{
+  .share:hover > h1 > span:nth-child(#{$i}):after{
+    $delay: 100 * $i;
+    $random: ($i * 5) - 30;
+    background: #ae9dc7;
+    opacity: 70%;
+    width: 100%;
+    transition: $transition;
+    transition-delay: $delay + ms;
+    transform: rotate($random + deg);
+  .share:hover > h1 > span:nth-child(#{$i}){
+    $delayTwo: 150 * $i;
+    color: $background;
+    transition-delay: $delayTwo + ms;
+  }
+  }
+}
 .hero {
     width: 100%;
     margin-bottom: 6%;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
+    background-image: $background;
+    font-family: $font;
+    text-align: center;
   }
 
   @mixin hero-propos {
     width: 100%;
     margin-bottom: 6%;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-    background-image: url(https://impatients.ca/wp-content/uploads/2020/04/st-lambert-6avril-2022cfrederique-menard-aubin-4570-e1689883408711.jpg) ;
+    //background-image: url(https://impatients.ca/wp-content/uploads/2020/04/st-lambert-6avril-2022cfrederique-menard-aubin-4570-e1689883408711.jpg) ;
     background-size: cover;
-
     background-repeat: no-repeat;
   }
+
+
