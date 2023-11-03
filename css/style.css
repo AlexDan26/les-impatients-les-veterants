@@ -375,6 +375,31 @@ span:after {
   text-align: center;
 }
 
+.cardEquipe {
+  border-radius: 0% 0% 10% 10%;
+}
+.cardEquipe.rose {
+  background-color: #FDDDe3;
+}
+.cardEquipe.rose:hover {
+  background-color: #fabfca;
+  color: black;
+}
+.cardEquipe.bleu {
+  background-color: #BADBF3;
+}
+.cardEquipe.bleu:hover {
+  background-color: #97cbf0;
+  color: black;
+}
+.cardEquipe.vert {
+  background-color: #EAFDE0;
+}
+.cardEquipe.vert:hover {
+  background-color: #d4fbc0;
+  color: black;
+}
+
 body {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -454,7 +479,6 @@ footer .sponsor .commandite {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
 }
 footer .sponsor img {
   flex-wrap: wrap;
@@ -474,6 +498,10 @@ footer .contact {
   text-align: left;
   text-emphasis: center;
   text-shadow: 1px 1px 7px black;
+}
+footer .contact img {
+  width: 50px;
+  height: 50px;
 }
 footer .contact a {
   color: #ffffff;
@@ -529,22 +557,11 @@ main {
   height: 100%;
   margin-bottom: 60px;
   width: 100%;
-  /*display: flex;
-  justify-content: center;
-  text-align: left;*/
-}
-
-.mission {
-  width: 100%;
-  margin-bottom: 6%;
-  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .info {
   background-color: rgb(255, 255, 255), 255, 0.521;
   background-color: rgba(255, 255, 255, 0.5725490196);
-  font-weight: bolder;
-  border-radius: 5px;
+  font-size: "nunito";
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -99,7 +99,7 @@ footer{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
+         
         }
         img{
           
@@ -123,6 +123,11 @@ footer{
        text-align: left;
        text-emphasis: center;
        text-shadow: 1px 1px 7px  black;
+         img{
+         width: 50px;
+         height: 50px;
+
+        }
      a{
         color: #ffffff;
      }
@@ -180,22 +185,17 @@ main{
     height: 100%;
     margin-bottom: 60px;
     width: 100%;
-    /*display: flex;
-    justify-content: center;
-    text-align: left;*/
+
 }
-.mission{
-    @include hero.hero-propos;
-   
-}
+
 .info{
     @include description.text;
     background-color: #ffffff92;
-    font-weight: bolder;
-    border-radius: 5px;
+    font-size: 'nunito';
+    padding: 10px;;
 }
 
- 
+
 
 
 
