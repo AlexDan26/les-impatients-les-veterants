@@ -191,9 +191,10 @@ main{
 
 .info{
     @include description.text;
-    background-color: #ffffff92;
+    background-color: #ffffff7a;
     font-size: 'nunito';
-    padding: 10px;;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
