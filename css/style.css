@@ -100,7 +100,7 @@ main {
 .heroService {
   color: #ffffff;
   height: 70px;
-  background-color: #BADBF3;
+  background-image: url("../../assets/imgServiceHero.jpg");
   background-size: cover;
 }
 
