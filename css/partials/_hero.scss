@@ -17,6 +17,8 @@ $font-size: 5vw;
 
 .main-container{
   color: $font-color;
+  z-index: 1;
+  position: relative;
 }
 
 .first-container, .second-container,.propos-container,.equipe-container,.faq-container{
@@ -62,6 +64,7 @@ span{
     $delayTwo: 150 * $i;
     color: $background;
     transition-delay: $delayTwo + ms;
+   
   }
   }
 }

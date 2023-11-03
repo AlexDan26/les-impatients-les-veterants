@@ -178,6 +178,8 @@ button.buttonLangue {
 
 .main-container {
   color: #D1C8E4;
+  z-index: 1;
+  position: relative;
 }
 
 .first-container, .second-container, .propos-container, .equipe-container, .faq-container {
