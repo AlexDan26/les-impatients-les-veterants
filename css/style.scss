@@ -99,7 +99,7 @@ footer{
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
+         
         }
         img{
           
@@ -180,19 +180,19 @@ main{
     height: 100%;
     margin-bottom: 60px;
     width: 100%;
-    /*display: flex;
+    display: flex;
     justify-content: center;
-    text-align: left;*/
+    text-align: left;
 }
 .mission{
     @include hero.hero-propos;
-   
+
 }
 .info{
     @include description.text;
     background-color: #ffffff92;
     font-weight: bolder;
-    border-radius: 5px;
+    padding: 10px;;
 }
 
  

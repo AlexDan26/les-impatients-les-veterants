@@ -284,7 +284,6 @@ footer .sponsor .commandite {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
 }
 footer .sponsor img {
   flex-wrap: wrap;
@@ -359,9 +358,9 @@ main {
   height: 100%;
   margin-bottom: 60px;
   width: 100%;
-  /*display: flex;
+  display: flex;
   justify-content: center;
-  text-align: left;*/
+  text-align: left;
 }
 
 .mission {
@@ -377,5 +376,5 @@ main {
   background-color: rgb(255, 255, 255), 255, 0.521;
   background-color: rgba(255, 255, 255, 0.5725490196);
   font-weight: bolder;
-  border-radius: 5px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
