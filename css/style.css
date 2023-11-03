@@ -75,11 +75,32 @@ main {
 .cardService img {
   margin-top: 15px;
 }
+.cardService.rose {
+  background-color: #FDDDe3;
+}
+.cardService.rose:hover {
+  background-color: #fabfca;
+  color: black;
+}
+.cardService.bleu {
+  background-color: #BADBF3;
+}
+.cardService.bleu:hover {
+  background-color: #97cbf0;
+  color: black;
+}
+.cardService.vert {
+  background-color: #EAFDE0;
+}
+.cardService.vert:hover {
+  background-color: #d4fbc0;
+  color: black;
+}
 
 .heroService {
   color: #ffffff;
   height: 70px;
-  background-image: url("../../assets/imgServiceHero.jpg");
+  background-color: #BADBF3;
   background-size: cover;
 }
 
@@ -281,7 +302,8 @@ footer .contact {
   grid-column-start: 4;
   grid-column-end: 3;
   text-align: left;
-  text-emphasis: center;
+  -webkit-text-emphasis: center;
+          text-emphasis: center;
   text-shadow: 1px 1px 7px black;
 }
 footer .contact a {
@@ -338,9 +360,9 @@ main {
   height: 100%;
   margin-bottom: 60px;
   width: 100%;
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: left;*/
 }
 
 .mission {

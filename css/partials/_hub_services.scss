@@ -3,12 +3,36 @@
     img{
         margin-top: 15px;
     }
+    &.rose {
+        background-color: #FDDDe3;
+        &:hover {
+            background-color: #fabfca;
+            color: black;
+        }
+    }
+      
+      &.bleu {
+        background-color: #BADBF3;
+        &:hover {
+            background-color: #97cbf0;
+            color: black;
+        }
+    }
+     
+      &.vert {
+        background-color: #EAFDE0;
+        &:hover {
+            background-color: #d4fbc0;
+            color: black;
+        }
+    }
 }
 
 .heroService{
     color: #ffffff;
     height:70px;
-    background-image: url("../../assets/imgServiceHero.jpg");
+    //background-image: url("../../assets/imgServiceHero.jpg");
+    background-color: #BADBF3;
     background-size: cover;
 }
 
