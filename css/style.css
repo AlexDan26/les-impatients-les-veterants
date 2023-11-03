@@ -205,6 +205,31 @@ button.buttonLangue {
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card-body {
+  border-radius: 0% 0% 10% 10%;
+}
+.card-body.rose {
+  background-color: #FDDDe3;
+}
+.card-body.rose:hover {
+  background-color: #fabfca;
+  color: black;
+}
+.card-body.bleu {
+  background-color: #BADBF3;
+}
+.card-body.bleu:hover {
+  background-color: #97cbf0;
+  color: black;
+}
+.card-body.vert {
+  background-color: #EAFDE0;
+}
+.card-body.vert:hover {
+  background-color: #d4fbc0;
+  color: black;
+}
+
 body {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -360,13 +385,11 @@ main {
   width: 100%;
 }
 
-.mission {
-  width: 100%;
-  margin-bottom: 6%;
-  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
-  background-image: url(https://impatients.ca/wp-content/uploads/2020/04/st-lambert-6avril-2022cfrederique-menard-aubin-4570-e1689883408711.jpg);
+.hero .heroApropos {
+  color: #fff;
+  height: 70px;
+  background-image: url("/sources/medias/a_propos/mission.webp");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .info {

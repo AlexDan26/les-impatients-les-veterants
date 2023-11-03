@@ -182,9 +182,14 @@ main{
     width: 100%;
 
 }
-.mission{
-    @include hero.hero-propos;
-
+.hero{
+.heroApropos{
+    color: #fff;
+    height:70px;
+    background-image: url("/sources/medias/a_propos/mission.webp");
+    //background-color: #BADBF3;
+    background-size: cover;
+}
 }
 .info{
     @include description.text;
@@ -193,7 +198,7 @@ main{
     padding: 10px;;
 }
 
- 
+
 
 
 
