@@ -33,7 +33,7 @@ nav{
 }
 footer{     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(375px, 1fr) 1fr 1fr;
     grid-template-rows:25% 25% 25% 25% ;
     background-color: #D1C8E4;
     color: white;
