@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 $font: 'Nunito';
-$font-color: #D1C8E4;
-$background: url('https://images.unsplash.com/photo-1616001089004-04948fc0e6c1?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+$font-color: #f1eff5;
+$background: url('https://images.unsplash.com/photo-1624087180397-67cf99a7acba?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 $transition: .6s;
 $font-size: 5vw;
 
@@ -50,7 +50,7 @@ span{
     z-index: -5;
 }
 }
-@for $i from 1 through 12{
+@for $i from 1 through 13{
   .share:hover > h1 > span:nth-child(#{$i}):after{
     $delay: 100 * $i;
     $random: ($i * 5) - 30;
