@@ -205,27 +205,27 @@ button.buttonLangue {
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-body .summary {
+.cardEquipe {
   border-radius: 0% 0% 10% 10%;
 }
-.card-body .summary.rose {
+.cardEquipe.rose {
   background-color: #FDDDe3;
 }
-.card-body .summary.rose:hover {
+.cardEquipe.rose:hover {
   background-color: #fabfca;
   color: black;
 }
-.card-body .summary.bleu {
+.cardEquipe.bleu {
   background-color: #BADBF3;
 }
-.card-body .summary.bleu:hover {
+.cardEquipe.bleu:hover {
   background-color: #97cbf0;
   color: black;
 }
-.card-body .summary.vert {
+.cardEquipe.vert {
   background-color: #EAFDE0;
 }
-.card-body .summary.vert:hover {
+.cardEquipe.vert:hover {
   background-color: #d4fbc0;
   color: black;
 }
