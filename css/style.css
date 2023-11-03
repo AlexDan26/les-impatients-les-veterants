@@ -405,6 +405,7 @@ body {
   background-repeat: no-repeat;
   background: rgb(209, 200, 228);
   background: linear-gradient(0deg, rgb(209, 200, 228) 0%, rgb(255, 255, 255) 50%, rgb(209, 200, 228) 100%);
+  font-family: "nunito";
 }
 
 h4 {
