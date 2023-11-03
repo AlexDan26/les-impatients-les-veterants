@@ -388,6 +388,7 @@ span:after {
   background-image: url("https://images.unsplash.com/photo-1624087180397-67cf99a7acba?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   font-family: "Nunito";
   text-align: center;
+  border-radius: 5px;
 }
 
 .cardEquipe {

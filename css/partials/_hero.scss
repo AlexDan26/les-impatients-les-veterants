@@ -11,9 +11,7 @@ $font-size: 5vw;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.hero{
 
-}
 
 .main-container{
   color: $font-color;
@@ -75,6 +73,7 @@ span{
     background-image: $background;
     font-family: $font;
     text-align: center;
+    border-radius: 5px;
   }
 
  
