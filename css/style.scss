@@ -182,19 +182,11 @@ main{
     width: 100%;
 
 }
-.hero{
-.heroApropos{
-    color: #fff;
-    height:70px;
-    background-image: url("/sources/medias/a_propos/mission.webp");
-    //background-color: #BADBF3;
-    background-size: cover;
-}
-}
+
 .info{
     @include description.text;
     background-color: #ffffff92;
-    font-weight: bolder;
+    font-size: 'nunito';
     padding: 10px;;
 }
 

@@ -205,27 +205,27 @@ button.buttonLangue {
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
-.card-body {
+.card-body .summary {
   border-radius: 0% 0% 10% 10%;
 }
-.card-body.rose {
+.card-body .summary.rose {
   background-color: #FDDDe3;
 }
-.card-body.rose:hover {
+.card-body .summary.rose:hover {
   background-color: #fabfca;
   color: black;
 }
-.card-body.bleu {
+.card-body .summary.bleu {
   background-color: #BADBF3;
 }
-.card-body.bleu:hover {
+.card-body .summary.bleu:hover {
   background-color: #97cbf0;
   color: black;
 }
-.card-body.vert {
+.card-body .summary.vert {
   background-color: #EAFDE0;
 }
-.card-body.vert:hover {
+.card-body .summary.vert:hover {
   background-color: #d4fbc0;
   color: black;
 }
@@ -385,16 +385,9 @@ main {
   width: 100%;
 }
 
-.hero .heroApropos {
-  color: #fff;
-  height: 70px;
-  background-image: url("/sources/medias/a_propos/mission.webp");
-  background-size: cover;
-}
-
 .info {
   background-color: rgb(255, 255, 255), 255, 0.521;
   background-color: rgba(255, 255, 255, 0.5725490196);
-  font-weight: bolder;
+  font-size: "nunito";
   padding: 10px;
 }/*# sourceMappingURL=style.css.map */
