@@ -3,8 +3,17 @@ button{
     border-radius: 90px;
     border: none;
     background-color:#D1CBE4;
-}
+   
+    &.buttonDonate{
+       margin: 1px;
+       background-color:#EAFDE0;
+    }
+    &.buttonLangue{
+        background-color:#FDDDe3;
+     }
+ }
 
+ 
 .buttonspace{
     display: flex;
     justify-content: center;
@@ -12,7 +21,3 @@ button{
     
 }
 
-.buttonDonate{
-    
-    margin: 4%;
-}
