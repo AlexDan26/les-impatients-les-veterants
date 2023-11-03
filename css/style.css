@@ -98,7 +98,7 @@ main {
 }
 
 .heroService {
-  color: #ffffff;
+  color: #fff;
   height: 70px;
   background-image: url("../../assets/imgServiceHero.jpg");
   background-size: cover;
@@ -302,8 +302,7 @@ footer .contact {
   grid-column-start: 4;
   grid-column-end: 3;
   text-align: left;
-  -webkit-text-emphasis: center;
-          text-emphasis: center;
+  text-emphasis: center;
   text-shadow: 1px 1px 7px black;
 }
 footer .contact a {
