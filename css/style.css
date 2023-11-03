@@ -582,4 +582,12 @@ main {
   font-size: "nunito";
   padding: 10px;
   border-radius: 5px;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+}
+.reseaux i {
+  margin: 10px;
 }/*# sourceMappingURL=style.css.map */
