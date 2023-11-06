@@ -585,7 +585,16 @@ main {
   width: 100%;
 }
 
-.info {
+.mission h1 {
+  padding-bottom: 2px;
+  margin-bottom: 0px;
+}
+.mission p {
+  margin-top: 0px;
+  padding-bottom: 25px;
+  margin-bottom: 0px;
+}
+.mission .info {
   background-color: rgb(255, 255, 255), 255, 0.521;
   background-color: rgba(255, 255, 255, 0.4784313725);
   font-size: "nunito";
