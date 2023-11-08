@@ -522,7 +522,8 @@ footer .contact {
   grid-column-start: 4;
   grid-column-end: 3;
   text-align: left;
-  text-emphasis: center;
+  -webkit-text-emphasis: center;
+          text-emphasis: center;
   text-shadow: 1px 1px 7px black;
 }
 footer .contact img {
