@@ -22,10 +22,12 @@ burger.addEventListener("mouseout", (event) => {
 .to(".burger",{scale: 1, duration: 1.5, yoyo: true})
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.caroussel', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
+  centeredSlides: true,
   loop: true,
+  spaceBetween: 40,
 
   // If we need pagination
   pagination: {
@@ -37,11 +39,21 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+    640: {
+        slidesPerView: 2.5,
+    },
+    768: {
+        slidesPerView: 2.75,
+    },
+    1080: {
+        slidesPerView: 3.25,
+    },
+    1280: {
+        slidesPerView: 3.75,
+    },
+},
 });
 
 
