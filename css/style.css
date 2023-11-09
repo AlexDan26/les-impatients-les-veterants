@@ -425,6 +425,25 @@ span:after {
   color: #000000;
 }
 
+.caroussel {
+  height: 300px;
+}
+
+.accordion-button {
+  color: #cf8290;
+  text-align: left;
+  background-color: #FDDDe3;
+}
+.accordion-button:not(.collapsed) {
+  color: #6086a1;
+  background-color: #BADBF3;
+}
+
+.accordion-body {
+  color: #87abc5;
+  background-color: aliceblue;
+}
+
 body {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -522,8 +541,7 @@ footer .contact {
   grid-column-start: 4;
   grid-column-end: 3;
   text-align: left;
-  -webkit-text-emphasis: center;
-          text-emphasis: center;
+  text-emphasis: center;
   text-shadow: 1px 1px 7px black;
 }
 footer .contact img {
