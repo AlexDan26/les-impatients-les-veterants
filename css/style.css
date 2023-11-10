@@ -107,6 +107,9 @@ main {
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 20px 20px;
 }
+.card:hover {
+  scale: 1.03;
+}
 .card .card-body {
   border-radius: 0 0 20px 20px;
 }
@@ -115,9 +118,6 @@ main {
 }
 .card .card-body .card-text {
   padding: 10px;
-}
-.card .card-body.first {
-  scale: 2;
 }
 .card .card-body.rose {
   background-color: #FDDDe3;
