@@ -1,8 +1,14 @@
-.hidden {
-    overflow: hidden;
-    display: none;
-&:active{
-    overflow: visible;
-    display: block;
-}
+.acceuil {
+    text-align: center;
+    padding: 45px;
+    
+      }
+
+.johanne{
+    text-align: center;
+    margin-top: 100px;
+    h2{
+        margin-top: 30px;
+         padding-bottom: 10px;
+    }
 }

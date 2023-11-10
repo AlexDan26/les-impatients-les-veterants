@@ -3,6 +3,7 @@
 @use "partials/hub_nouvelle";
 @use "partials/erreur";
 @use "partials/hub_services";
+@use "partials/acceuil";
 /*Partials de composantes*/
 @use "partials/card";
 @use "partials/button";
@@ -210,15 +211,6 @@ main{
     border-radius: 5px;
 }
 }
-.johanne{
-    text-align: center;
-    margin-top: 100px;
-    h2{
-        margin-top: 30px;
-        padding-bottom: 10px;
-
-    }
-}
 
 .francois{
     text-align: center;
@@ -371,10 +363,4 @@ iframe {
     .right {
     left: 0%;
     }
-  }
-
-  .acceuil {
-text-align: center;
-padding: 45px;
-
   }

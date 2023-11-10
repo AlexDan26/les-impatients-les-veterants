@@ -87,6 +87,20 @@ main {
   margin-top: 25vh;
 }
 
+.acceuil {
+  text-align: center;
+  padding: 45px;
+}
+
+.johanne {
+  text-align: center;
+  margin-top: 100px;
+}
+.johanne h2 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
 /*Partials de composantes*/
 .card {
   margin: 10px auto 10px;
@@ -651,15 +665,6 @@ main {
   border-radius: 5px;
 }
 
-.johanne {
-  text-align: center;
-  margin-top: 100px;
-}
-.johanne h2 {
-  margin-top: 30px;
-  padding-bottom: 10px;
-}
-
 .francois {
   text-align: center;
   margin-top: 100px;
@@ -799,8 +804,4 @@ iframe {
   .right {
     left: 0%;
   }
-}
-.acceuil {
-  text-align: center;
-  padding: 45px;
 }/*# sourceMappingURL=style.css.map */
