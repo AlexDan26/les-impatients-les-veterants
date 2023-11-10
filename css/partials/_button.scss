@@ -13,6 +13,8 @@ button{
      }
      &.button_service{
         background-color:#fabfca;
+       border-radius: 40px;
+       padding: 10px;
         &:hover{
             background-color: #FDDDe3;
             color: #000000;
