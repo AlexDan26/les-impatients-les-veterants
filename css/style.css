@@ -103,7 +103,7 @@ main {
   padding: 10px;
 }
 .card .card-body.first {
-  color: aliceblue;
+  scale: 2;
 }
 .card .card-body.rose {
   background-color: #FDDDe3;
@@ -139,6 +139,15 @@ button.buttonDonate {
 }
 button.buttonLangue {
   background-color: #FDDDe3;
+}
+button.button_service {
+  background-color: #fabfca;
+  border-radius: 40px;
+  padding: 10px;
+}
+button.button_service:hover {
+  background-color: #FDDDe3;
+  color: #000000;
 }
 
 .buttonspace {
