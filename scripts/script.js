@@ -22,11 +22,11 @@ burger.addEventListener("mouseout", (event) => {
 .to(".burger",{scale: 1, duration: 1.5, yoyo: true})
 });
 
-let x = document.querySelector(".iconeX");
+const iconeX = document.querySelector(".iconeX");
 
-x.addEventListener("click"), (event) =>{
-  console.log("allo");
-}
+iconeX.addEventListener("click", (event) => {
+console.log("allo")
+});
 
 const swiper = new Swiper('.caroussel', {
   // Optional parameters
