@@ -100,6 +100,14 @@ main {
   padding-bottom: 10px;
 }
 
+.service.offert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*Partials de composantes*/
 .card {
   margin: 10px auto 10px;
@@ -161,6 +169,7 @@ button.button_service {
   border-radius: 40px;
   padding: 10px;
   position: relative;
+  margin: 20px;
 }
 button.button_service:hover {
   background-color: #FDDDe3;

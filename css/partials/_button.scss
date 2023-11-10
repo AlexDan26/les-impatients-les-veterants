@@ -17,9 +17,11 @@ button{
      &.button_service{
         //bouton service
         background-color:#fabfca;
-       border-radius: 40px;
-       padding: 10px;
-       position: relative;
+        border-radius: 40px;
+        padding: 10px;
+        position: relative;
+        margin: 20px ;
+    
        
         &:hover{
             background-color: #FDDDe3;
