@@ -108,6 +108,13 @@ main {
   flex-wrap: wrap;
 }
 
+@media (max-width: 576px) {
+  .service.offert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /*Partials de composantes*/
 .card {
   margin: 10px auto 10px;
