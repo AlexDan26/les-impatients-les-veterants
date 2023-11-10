@@ -650,34 +650,25 @@ main {
   border-radius: 5px;
 }
 
+.johanne {
+  text-align: center;
+  margin-top: 100px;
+}
+.johanne h2 {
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+
 .francois {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .francois h1 {
   margin-top: 30px;
   padding-bottom: 10px;
 }
 
-.bg1 {
-  position: relative;
-  top: -240px;
-  left: 22.5%;
-  background-color: #D1C8E4;
-  width: 480px;
-  height: 240px;
-  z-index: -1;
-  border-radius: 5px;
-}
-
-.bg2 {
-  position: relative;
-  top: -510px;
-  left: 26.5%;
-  background-color: #D1C8E4;
-  width: 480px;
-  height: 240px;
-  z-index: -1;
+iframe {
   border-radius: 5px;
 }
 
