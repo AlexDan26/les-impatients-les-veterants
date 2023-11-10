@@ -23,9 +23,13 @@ burger.addEventListener("mouseout", (event) => {
 });
 
 const iconeX = document.querySelector(".iconeX");
+const avertiss = document.querySelector(".warning");
 
 iconeX.addEventListener("click", (event) => {
-console.log("allo")
+  let deactiver = "deactiver";
+  let sauvArvetiss = avertiss.classList.add(deactiver);
+  localStorage.setItem("Statut",sauvArvetiss);
+  console.log(sauvArvetiss);
 });
 
 const swiper = new Swiper('.caroussel', {
