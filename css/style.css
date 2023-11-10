@@ -110,6 +110,9 @@ main {
 .card:hover {
   scale: 1.03;
 }
+.card.first {
+  border: 6px double #BADBF3;
+}
 .card .card-body {
   border-radius: 0 0 20px 20px;
 }
