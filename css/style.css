@@ -71,7 +71,9 @@ main {
 }
 
 .cardService {
-  padding: 0 0 0 0;
+  height: 100%;
+  margin: 10px 0;
+  background-color: aqua;
 }
 
 .heroService {
@@ -425,8 +427,26 @@ span:after {
   color: #000000;
 }
 
-.caroussel {
-  height: 300px;
+.containCaroussel {
+  height: 60vh;
+  width: 60vh;
+  padding: 45px 0;
+}
+
+.swiper-slide {
+  opacity: 0.4;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1.5);
 }
 
 .accordion-button {
