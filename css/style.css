@@ -506,6 +506,21 @@ span:after {
   background-color: aliceblue;
 }
 
+.warning {
+  padding: 5px 0 5px 0;
+  width: 100%;
+  text-align: center;
+  background-color: #ae9dc7;
+  border-radius: 0 0 5px 5px;
+}
+.warning.deactiver {
+  display: none;
+}
+
+.warning h4 a {
+  color: #ebebeb;
+}
+
 body {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -629,18 +644,6 @@ footer .mention {
   grid-column-end: -1;
   text-align: end;
   font-size: 14px;
-}
-
-.warning {
-  padding: 5px 0 5px 0;
-  width: 100%;
-  text-align: center;
-  background-color: #ae9dc7;
-  border-radius: 0 0 5px 5px;
-}
-
-.warning h4 a {
-  color: #ebebeb;
 }
 
 .message404 {

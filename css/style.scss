@@ -12,6 +12,7 @@
 @use "partials/description";
 @use "partials/caroussel";
 @use "partials/arcordeon";
+@use "partials/avertissement";
 
 body{
     min-height: 100vh;
@@ -154,18 +155,6 @@ footer{
         text-align: end;
         font-size: 14px;
     }
-}
-
-.warning{
-    padding: 5px 0 5px 0;
-    width: 100%;
-    text-align: center;
-    background-color: #ae9dc7;
-    border-radius: 0 0 5px 5px;;
-}
-
-.warning h4 a{
-    color: #ebebeb;
 }
 
 .message404{
