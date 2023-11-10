@@ -198,7 +198,7 @@ main{
     }
     p {
         margin-top: 0px;
-        padding-bottom:25px;
+        padding-bottom:40px;
         margin-bottom: 0px; 
     }
 .info{
@@ -206,11 +206,40 @@ main{
     @include description.text;
     background-color: #ffffff7a;
     font-size: 'nunito';
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
-    
-  
 }
+}
+
+.francois{
+    text-align: center;
+    margin-top: 20px;
+    h1{
+        margin-top: 30px;
+        padding-bottom: 10px;
+
+    }
+
+}
+.bg1{
+    position: relative;
+    top:-240px;
+    left:22.5%;
+    background-color: #D1C8E4;
+    width: 480px;
+    height: 240px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.bg2{
+    position: relative;
+    top:-510px;
+    left:26.5%;
+    background-color: #D1C8E4;
+    width: 480px;
+    height: 240px;
+    z-index: -1;
+    border-radius: 5px;
 }
 
 .reseaux{
@@ -326,7 +355,7 @@ main{
     }
     
     /* Full-width containers */
-    .containerhistoire {
+    .containerHistoire {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;

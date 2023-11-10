@@ -68,8 +68,13 @@ btn_plus.addEventListener('click', () => {
 
 
 /*timeline*/
-
-
+gsap.from(".containerHistoire left",
+{
+  opacity:0,
+  duration:2,
+  x:-400
+}
+)
 
 
 
