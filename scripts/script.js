@@ -26,6 +26,8 @@ const iconeX = document.querySelector(".iconeX");
 const avertiss = document.querySelector(".warning");
 
 iconeX.addEventListener("click", (event) => {
+  /*REAGRDER AVEC TUTORAT POUR LOCALSTORAGE*/
+  localStorage.getItem("Statut");
   let deactiver = "deactiver";
   let sauvArvetiss = avertiss.classList.add(deactiver);
   localStorage.setItem("Statut",sauvArvetiss);
