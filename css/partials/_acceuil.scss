@@ -1,0 +1,8 @@
+.hidden {
+    overflow: hidden;
+    display: none;
+&:active{
+    overflow: visible;
+    display: block;
+}
+}

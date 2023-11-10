@@ -144,6 +144,7 @@ button.button_service {
   background-color: #fabfca;
   border-radius: 40px;
   padding: 10px;
+  position: relative;
 }
 button.button_service:hover {
   background-color: #FDDDe3;
@@ -798,4 +799,8 @@ iframe {
   .right {
     left: 0%;
   }
+}
+.acceuil {
+  text-align: center;
+  padding: 45px;
 }/*# sourceMappingURL=style.css.map */

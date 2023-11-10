@@ -1,20 +1,26 @@
 button{
+    //bouton par defaut
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 90px;
     border: none;
     background-color:#D1CBE4;
    
     &.buttonDonate{
+        //bouton donation
        margin: 1px;
        background-color:#EAFDE0;
     }
     &.buttonLangue{
+        //bouton langue
         background-color:#FDDDe3;
      }
      &.button_service{
+        //bouton service
         background-color:#fabfca;
        border-radius: 40px;
        padding: 10px;
+       position: relative;
+       
         &:hover{
             background-color: #FDDDe3;
             color: #000000;
