@@ -103,7 +103,7 @@ main {
   padding: 10px;
 }
 .card .card-body.first {
-  color: aliceblue;
+  scale: 2;
 }
 .card .card-body.rose {
   background-color: #FDDDe3;
