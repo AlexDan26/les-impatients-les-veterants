@@ -11,6 +11,13 @@ button{
     &.buttonLangue{
         background-color:#FDDDe3;
      }
+     &.button_service{
+        background-color:#fabfca;
+        &:hover{
+            background-color: #FDDDe3;
+            color: #000000;
+        }
+     }
  }
 
  

@@ -140,6 +140,13 @@ button.buttonDonate {
 button.buttonLangue {
   background-color: #FDDDe3;
 }
+button.button_service {
+  background-color: #fabfca;
+}
+button.button_service:hover {
+  background-color: #FDDDe3;
+  color: #000000;
+}
 
 .buttonspace {
   display: flex;
