@@ -1,14 +1,14 @@
 .acceuil {
     text-align: center;
-    padding: 45px;
-    
-      }
-
-.johanne{
-    text-align: center;
     margin-top: 100px;
-    h2{
-        margin-top: 30px;
-         padding-bottom: 10px;
+    &.temoignage{
+        padding-bottom: 10px;
+    }
+    &.service{
+        padding-bottom: 10px;
+    }
+    &.new{
+        padding-bottom: 10px;
     }
 }
+

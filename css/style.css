@@ -89,15 +89,15 @@ main {
 
 .acceuil {
   text-align: center;
-  padding: 45px;
-}
-
-.johanne {
-  text-align: center;
   margin-top: 100px;
 }
-.johanne h2 {
-  margin-top: 30px;
+.acceuil.temoignage {
+  padding-bottom: 10px;
+}
+.acceuil.service {
+  padding-bottom: 10px;
+}
+.acceuil.new {
   padding-bottom: 10px;
 }
 
