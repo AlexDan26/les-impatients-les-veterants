@@ -28,6 +28,7 @@ const swiper = new Swiper('.caroussel', {
   centeredSlides: true,
   loop: true,
   spaceBetween: 40,
+  //slidesPerView: 3,
 
   // If we need pagination
   pagination: {
@@ -39,21 +40,6 @@ const swiper = new Swiper('.caroussel', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints: {
-
-    640: {
-        slidesPerView: 2.5,
-    },
-    768: {
-        slidesPerView: 2.75,
-    },
-    1080: {
-        slidesPerView: 3.25,
-    },
-    1280: {
-        slidesPerView: 3.75,
-    },
-},
 });
 
 
