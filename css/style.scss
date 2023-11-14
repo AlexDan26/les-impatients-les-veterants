@@ -121,10 +121,6 @@ footer{
     }
     .contact{
        margin: 10px 5px;
-       grid-row-start: 1;
-       grid-row-end:4;
-       grid-column-start: 4;
-       grid-column-end: 3;
        text-align: left;
        text-emphasis: center;
        text-shadow: 1px 1px 7px  black;
@@ -141,6 +137,13 @@ footer{
         font-size: 24px;
         text-align: center;
        }
+    }
+    @media screen and(max-width: 456px)  {
+        .contact{ 
+            p{
+            text-align: center;
+        }
+         } 
     }
    
     .mention{
