@@ -5,11 +5,7 @@ button{
     border: none;
     background-color:#D1CBE4;
    
-    &.buttonDonate{
-        //bouton donation
-       margin: 1px;
-       background-color:#EAFDE0;
-    }
+    
     &.buttonLangue{
         //bouton langue
         background-color:#FDDDe3;
@@ -36,6 +32,19 @@ button{
     justify-content: center;
     text-decoration: none;
     
+    
+}
+@media screen and (min-width: 576px)  {
+    .buttonDonate{
+        //bouton donation
+        margin-top: 25%;
+    }
+}
+@media screen and (max-width: 576px)  {
+    .buttonDonate{
+        //bouton donation
+        margin: 35px 0 35px 0;
+    }
 }
 
 .navbar-default .navbar-toggle:focus,
