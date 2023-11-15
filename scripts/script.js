@@ -22,17 +22,31 @@ burger.addEventListener("mouseout", (event) => {
 .to(".burger",{scale: 1, duration: 1.5, yoyo: true})
 });
 
+//BARRE D'AVERTISSEMENT
+
 const iconeX = document.querySelector(".iconeX");
 const avertiss = document.querySelector(".warning");
+let iconeXClicked = localStorage.setItem("disable", false);
 
-iconeX.addEventListener("click", (event) => {
-  /*REAGRDER AVEC TUTORAT POUR LOCALSTORAGE*/
-  localStorage.getItem("Statut");
-  let deactiver = "deactiver";
-  let sauvArvetiss = avertiss.classList.add(deactiver);
-  localStorage.setItem("Statut",sauvArvetiss);
-  console.log(sauvArvetiss);
-});
+function disableWarning(){
+  iconeXClicked = localStorage.getItem("disable");
+  if(iconeXClicked == "true"){
+    console.log("2nd step")
+    let deactiver = "deactiver";
+    let sauvArvetiss = avertiss.classList.add(deactiver);
+  }
+  
+  else{
+    iconeX.addEventListener("click", (event) => {
+    console.log("3rd step")
+    iconeXClicked = localStorage.setItem("disable", true);
+    iconeXClicked = localStorage.getItem("disable")
+    let deactiver = "deactiver";
+    let sauvArvetiss = avertiss.classList.add(deactiver);
+    });
+  };
+};
+disableWarning();
 
 const swiper = new Swiper('.caroussel', {
   // Optional parameters
