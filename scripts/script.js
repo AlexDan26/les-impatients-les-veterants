@@ -8,6 +8,9 @@ gsap
 .to(".buttonDonate",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1})
 gsap
 .timeline()
+.to(".buttonDonateFoot",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1})
+gsap
+.timeline()
 .to(".svg404",{rotate:"720",duration:3, opacity:"100%"})
 
 burger.addEventListener("mouseover", (event) => {
