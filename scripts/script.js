@@ -90,14 +90,34 @@ btn_plus.addEventListener('click', () => {
 
 
 
-/*timeline*/
-gsap.from(".containerHistoire left",
-{
+/*Timeline pour HISTOIRE*/ 
+
+gsap.from('.One', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+   
+    trigger: '.One',
+  },
   opacity:0,
-  duration:2,
-  x:-400
-}
-)
+  x: '100%',
+  duration: 2,
+});
+
+gsap.from('.Two', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+   
+    trigger: '.Two',
+  },
+  opacity:0,
+  x: '-150%',
+  duration: 2,
+});
+
 
 
 
