@@ -29,24 +29,22 @@ burger.addEventListener("mouseout", (event) => {
 
 const iconeX = document.querySelector(".iconeX");
 const avertiss = document.querySelector(".warning");
-let iconeXClicked = localStorage.setItem("disable", false);
+iconeX.addEventListener("click", (event) => {
+  localStorage.setItem("disable", true);
+  let deactiver = "deactiver";
+  let sauvArvetiss = avertiss.classList.add(deactiver);
+ });
+
+
 
 function disableWarning(){
-  iconeXClicked = localStorage.getItem("disable");
-  if(iconeXClicked == "true"){
+
+  console.log(localStorage.getItem("disable"));
+
+  if(localStorage.getItem("disable") != null){
     console.log("2nd step")
     let deactiver = "deactiver";
     let sauvArvetiss = avertiss.classList.add(deactiver);
-  }
-  
-  else{
-    iconeX.addEventListener("click", (event) => {
-    console.log("3rd step")
-    iconeXClicked = localStorage.setItem("disable", true);
-    iconeXClicked = localStorage.getItem("disable")
-    let deactiver = "deactiver";
-    let sauvArvetiss = avertiss.classList.add(deactiver);
-    });
   };
 };
 disableWarning();
