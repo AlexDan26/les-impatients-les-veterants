@@ -171,6 +171,10 @@ button {
 button.buttonLangue {
   background-color: #FDDDe3;
 }
+button.plus {
+  margin: 10px;
+  padding: 10px;
+}
 button.button_service {
   background-color: #fabfca;
   border-radius: 40px;
