@@ -38,6 +38,18 @@
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
 }
 
+.suivante_new {
+  margin: 15px;
+}
+.suivante_new.suivante_new a:link {
+  color: white;
+  text-decoration: none;
+}
+.suivante_new.suivante_new a:hover {
+  color: #fabfca;
+  text-decoration: none;
+}
+
 .hidden {
   overflow: hidden;
   display: none;
