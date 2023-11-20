@@ -38,10 +38,12 @@
   }
   .suivante_new{
     margin: 15px;
+    text-align: end;
 
     &.suivante_new a:link{
-      color:  white;
+     color:  white;
      text-decoration: none;
+     
     }
     &.suivante_new a:hover{
       color:  #fabfca;
