@@ -1,14 +1,15 @@
-//Code pour les carte Équipe
+//Code pour les card Équipe
 .cardEquipe {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0% 0% 10% 10%;
   width: 100%;
-
+//Code pour les card Équipe rose
   &.rose {
     background-color: #fddde3;
   }
+  //Code pour les card Équipe bleu
   &.bleu {
    .modal {
       .modal-footer {
@@ -21,12 +22,12 @@
     }
     background-color: #badbf3;
   }
-
+//Code pour les card Équipe vert
   &.vert {
     background-color: #eafde0; 
     
   }
-
+//Code pour les card-bouton Équipe
   button {
     align-self: center;
     background-color: #ffffff;

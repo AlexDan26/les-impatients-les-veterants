@@ -13,7 +13,7 @@
 @use "partials/caroussel";
 @use "partials/arcordeon";
 @use "partials/avertissement";
-
+//body
 body{
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -21,12 +21,12 @@ body{
     background: linear-gradient(0deg, rgba(209,200,228,1) 0%, rgba(255,255,255,1) 50%, rgba(209,200,228,1) 100%);
     font-family: 'nunito';
 }
-
+//titre 4
 h4{
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
 }
-
+// menu navigateur
 nav{
     padding-top: 5px;
     background-color: #EBEBEB;
@@ -35,6 +35,7 @@ nav{
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
     
 }
+//footer
 footer{     
     //display: grid;
     //grid-template-columns: minmax(375px, 1fr) 1fr 1fr;
@@ -44,7 +45,7 @@ footer{
     text-align: center;
     box-shadow: 0px -5px 5px 2px rgba(0, 0, 0, 0.139);
    
-   
+   //effet shadow
     .shadow{
         text-shadow: 2px 2px black;
        

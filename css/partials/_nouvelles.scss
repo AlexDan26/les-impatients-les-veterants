@@ -1,3 +1,4 @@
+//section article texte
 .article {
   display: flex;
   justify-content: center;
@@ -15,12 +16,14 @@
     text-transform: uppercase;
   }
 }
+
+//texte en haut de la page:les impatients 
 .top_title {
   color:  rgb(255, 255, 255);
   font-style: italic;
   }
   
-
+//section photo article
 .section_photo {
     margin: 10px;
     max-height: 340px;
@@ -36,6 +39,7 @@
     border: 8px solid white;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
   }
+  //Onglet  nouvelle suivante
   .suivante_new{
     margin: 15px;
     text-align: end;
