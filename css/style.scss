@@ -50,7 +50,7 @@ footer{
         text-shadow: 2px 2px black;
        
     }
-
+//logo footer
     .logo{
         width: 20%;
         position: relative;
@@ -75,7 +75,7 @@ footer{
         }
     }
 
-  
+  //bouton don
     button{
        
             background-color: #EAFDE0; /* Green */
@@ -93,6 +93,7 @@ footer{
             border-radius: 10px;
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24) ; 
     }
+    //section sponso footer
     .sponsor{
        
         grid-column-start: 1;
@@ -120,6 +121,7 @@ footer{
            
         }
     }
+    //section contact footer
     .contact{
        margin: 10px 5px;
        text-align: left;
@@ -161,6 +163,7 @@ footer{
     }
 }
 
+// page erreur  404
 .message404{
     display: flex;
     justify-content: center;
@@ -178,12 +181,16 @@ footer{
     margin-top: 60px;
     text-align: center;
 }
+
+//main
 main{
     height: 100%;
     margin-bottom: 60px;
     width: 100%;
 
 }
+
+//page mission
 .mission{
     h1{
        
@@ -204,7 +211,7 @@ main{
     border-radius: 5px;
 }
 }
-
+// page mission section francois belle feuille 
 .francois{
     text-align: center;
     margin-top: 100px;
@@ -216,7 +223,7 @@ main{
 
 
 }
-
+//footer icon réseaux section
 iframe {
     border-radius: 5px;
 }
@@ -304,7 +311,7 @@ iframe {
       }
     }
   }
-  
+  //Section timeline pour histoire breakpoint md
   @media screen and (max-width: 768px) {
     .timeline {
       ul {
@@ -326,7 +333,7 @@ iframe {
       }
     }
   }
-  
+    //Section timeline pour histoire breakpoint sm
   @media screen and (max-width: 375px) {
 
     .timeline {
