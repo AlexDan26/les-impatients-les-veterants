@@ -1,3 +1,4 @@
+// bouton
 button{
     //bouton par defaut
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
@@ -5,16 +6,18 @@ button{
     border: none;
     background-color:#D1CBE4;
    
-    
+    //bouton changement de langue
     &.buttonLangue{
         //bouton langue
         background-color:#FDDDe3;
      }
+     //bouton voir plus de nouvelles
      &.plus{
         //bouton langue
         margin: 10px;
         padding: 10px;
      }
+     //bouton service dans l'acceuil
      &.button_service{
         //bouton service
         background-color:#fabfca;
@@ -23,7 +26,7 @@ button{
         position: relative;
         margin: 20px ;
     
-       
+       // hover bouton de service
         &:hover{
             background-color: #FDDDe3;
             color: #000000;
