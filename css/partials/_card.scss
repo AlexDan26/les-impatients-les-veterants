@@ -1,3 +1,4 @@
+//Card
 .card {
     margin: 10px auto 10px;
     box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
@@ -5,11 +6,12 @@
     &:hover{
        scale: 1.03; 
     }
+    //Première card dans la section nouvelle
     &.first {
         border: 6px  double #BADBF3;
 
     }
-
+//Couleur des card + contenu
     .card-body {
         border-radius: 0 0 20px 20px;
 
@@ -21,7 +23,7 @@
             padding: 10px;
         }
 
-
+//card rose
         &.rose {
             background-color: #FDDDe3;
 
@@ -30,7 +32,7 @@
                 color: #000000;
             }
         }
-
+//card Bleu
         &.bleu {
             background-color: #BADBF3;
 
@@ -39,7 +41,7 @@
                 color: black;
             }
         }
-
+//card vert
         &.vert {
             background-color: #EAFDE0;
 

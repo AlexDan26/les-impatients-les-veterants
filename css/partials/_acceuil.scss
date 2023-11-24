@@ -1,21 +1,25 @@
+//section de la page acceuil
 .acceuil {
     text-align: center;
     margin-top: 100px;
+//section de la page acceuil temoignage
     &.temoignage{
         padding-bottom: 10px;
     }
+    //section de la page acceuil service
     &.service{
         padding-bottom: 10px;
     }
+    //section de la page acceuil new
     &.new{
         padding-bottom: 10px;
     }
 }
-
+//img avant plan acceuil
 .imgIntro{
     width: 500px;
 }
-
+//section de la page acceuil service contenu
 .service.offert {
     width: 100%;
     display: flex;
