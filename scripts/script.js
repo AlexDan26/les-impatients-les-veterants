@@ -12,7 +12,8 @@ gsap
 .to(".buttonDonateFoot",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1}) //Animation du bouton Don du footer
 gsap
 .timeline()
-.to(".svg404",{rotate:"720",duration:3, opacity:"100%"}) //Animation de l'erreur 404
+.from(".svg404",{opacity: "0%"})
+.to(".svg404",{stagger: 1, duration:3, opacity:"100%"}) //Animation de l'erreur 404
 
 burger.addEventListener("mouseover", (event) => { //Lorsqu'on survole le bouton Hamburger avec la souris...
     gsap
