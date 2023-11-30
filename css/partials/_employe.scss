@@ -1,3 +1,5 @@
+//Inclure le fichiers des Mixins
+@use "mixins/variables";
 //Code pour les card Équipe
 .cardEquipe {
   display: flex;
@@ -13,10 +15,10 @@
   &.bleu {
    .modal {
       .modal-footer {
-        background-color: #ffffff;
+        @include variables.couleurBGBlanc;
         button {
-          background-color: #ffffff;
-          color: #000000;
+          @include variables.couleurBGBlanc;
+          @include variables.couleurTexteNoir;
         }
       }
     }
@@ -30,7 +32,7 @@
 //Code pour les card-bouton Équipe
   button {
     align-self: center;
-    background-color: #ffffff;
-    color: #000000;
+    @include variables.couleurBGBlanc;
+    @include variables.couleurTexteNoir;
   }
 }
