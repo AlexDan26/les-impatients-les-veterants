@@ -1,3 +1,4 @@
+@use "mixins/variables";
 // bouton
 button{
     //bouton par defaut
@@ -9,7 +10,7 @@ button{
     //bouton changement de langue
     &.buttonLangue{
         //bouton langue
-        background-color:#FDDDe3;
+        @include variables.couleurBGRose;
      }
      //bouton voir plus de nouvelles
      &.plus{
@@ -20,7 +21,7 @@ button{
      //bouton service dans l'acceuil
      &.button_service{
         //bouton service
-        background-color:#fabfca;
+        @include variables.couleurBGRoseHover;
         border-radius: 40px;
         padding: 10px;
         position: relative;
@@ -28,8 +29,8 @@ button{
     
        // hover bouton de service
         &:hover{
-            background-color: #FDDDe3;
-            color: #000000;
+            @include variables.couleurBGRose;
+            @include variables.couleurTexteNoir;
         }
      }
  }
