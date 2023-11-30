@@ -1,3 +1,4 @@
+@use "mixins/variables";
 //.accordion-button {
 // //color: #f7f7f7;;
 //background-color: #FDDDe3;
@@ -13,7 +14,7 @@
 
   &:not(.collapsed) {
     color:  #6086a1;
-    background-color: #BADBF3;
+    @include variables.couleurBGBleu;
 
   }
 
