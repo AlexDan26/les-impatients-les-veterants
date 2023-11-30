@@ -1,0 +1,17 @@
+//Les couleurs d'arrière-plan
+@mixin couleurBGBleu{
+    background-color: #BADBF3;
+}
+@mixin couleurBGRose{
+    background-color: #FDDDe3;
+}
+@mixin couleurBGRoseHover{
+    background-color: #fabfca;
+}
+@mixin couleurBGBlanc{
+    background-color: #fff;
+}
+//Couleurs des textes
+@mixin couleurTexteNoir{
+    color: #000
+}
