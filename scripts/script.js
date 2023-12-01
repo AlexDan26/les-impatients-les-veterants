@@ -1,113 +1,86 @@
-gsap.registerPlugin(ScrollTrigger); //Extension ScrollTrigger
-gsap.registerPlugin(MotionPathPlugin); //Extension Motion path
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
 
-//BOUTON HAMBURGERS ET DONS
-const burger = document.querySelector(".burger"); //Le bouton Hamburger du menu Nav lorsqu'il est en affichage mobile
+const burger = document.querySelector(".burger");
 
 gsap
 .timeline()
-.to(".buttonDonate",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1}) //Animation du bouton Don du menu Nav
+.to(".buttonDonate",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1})
 gsap
 .timeline()
-.to(".buttonDonateFoot",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1}) //Animation du bouton Don du footer
+.to(".buttonDonateFoot",{scale: 1.2, duration: 1.5, yoyo: true, repeat: -1})
 gsap
 .timeline()
-.from(".svg404",{opacity: "0%"})
-.to(".svg404",{stagger: 1, duration:3, opacity:"100%"}) //Animation de l'erreur 404
+.to(".svg404",{rotate:"720",duration:3, opacity:"100%"})
 
-burger.addEventListener("mouseover", (event) => { //Lorsqu'on survole le bouton Hamburger avec la souris...
+burger.addEventListener("mouseover", (event) => {
     gsap
 .timeline()
-.to(".burger",{scale: 1.2, duration: 1.5, yoyo: true}) //... Il grossit
+.to(".burger",{scale: 1.2, duration: 1.5, yoyo: true})
 });
 
-burger.addEventListener("mouseout", (event) => { //Lorsqu'on enlève la souris du bouton Hamburger...
+burger.addEventListener("mouseout", (event) => {
     gsap
 .timeline()
-.to(".burger",{scale: 1, duration: 1.5, yoyo: true}) //... Il rétrécit
+.to(".burger",{scale: 1, duration: 1.5, yoyo: true})
 });
 
-//BANNIÈRE D'AVERTISSEMENT
-const iconeX = document.querySelector(".iconeX"); //L'icône X de la bannière
-const avertiss = document.querySelector(".warning"); //La bannière
-iconeX.addEventListener("click", (event) => { //Lorsque l'icône est cliquée...
+//BARRE D'AVERTISSEMENT
+
+const iconeX = document.querySelector(".iconeX");
+const avertiss = document.querySelector(".warning");
+iconeX.addEventListener("click", (event) => {
   localStorage.setItem("disable", true);
   let deactiver = "deactiver";
-  let sauvArvetiss = avertiss.classList.add(deactiver); //...Donner la classe pour faire disparaitre la bannière
+  let sauvArvetiss = avertiss.classList.add(deactiver);
  });
 
-//GARDER LA BANNIÈRE FERMÉE
+
+
 function disableWarning(){
 
   console.log(localStorage.getItem("disable"));
 
-  if(localStorage.getItem("disable") != null){ //Si la variable est "TRUE"...
+  if(localStorage.getItem("disable") != null){
     console.log("2nd step")
     let deactiver = "deactiver";
-    let sauvArvetiss = avertiss.classList.add(deactiver); //... la claase sera ajouté au chargement de la page et sera fermé par défaut
+    let sauvArvetiss = avertiss.classList.add(deactiver);
   };
 };
 disableWarning();
 
-//CARROUSSEL
 const swiper = new Swiper('.caroussel', {
-  //Paramètres
-  direction: 'horizontal', //Direction Horizontale
-  centeredSlides: true, //Diapositives Centrées
-  loop: true, //Le diaporama boucle sur elle même
-  spaceBetween: 40, //Espace entre les diapositives
+  // Optional parameters
+  direction: 'horizontal',
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 40,
+  //slidesPerView: 3,
 
-  //Pagination
+  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 });
 
-/*ANIMATION DE LA PAGE D'HISTOIRE*/ 
-gsap.from('.One', {
-  scrollTrigger: { //Animation au fur et à mesure que l'on défile la page
-    /*markers: true,
-    start: 'top 75%',
-    end: 'bottom 25%',*/
-   
-    trigger: '.One',
-  },
-  opacity:0, //La section de viendra de plus en plus opaque
-  x: '100%', //Et elle va se décaler
-  duration: 2, //Et l'animation va durer 2 secondes
-});
 
-gsap.from('.Two', {
-  scrollTrigger: { //Animation au fur et à mesure que l'on défile la page
-    /*markers: true,
-    start: 'top 75%',
-    end: 'bottom 25%',*/
-   
-    trigger: '.Two',
-  },
-  opacity:0, //La section de viendra de plus en plus opaque
-  x: '-150%', //Et elle va se décaler
-  duration: 2,  //Et l'animation va durer 2 secondes
-});
-
-//HUB DE NOUVELLES
-let btn_plus    = document.querySelector('.plus'); //Bouton pour plus de nouvelles
-let cacher   = document.querySelector('.hidden'); //La section de nouvelles cachées
-let hidden  = true; 
+let btn_plus    = document.querySelector('.plus');
+let cacher   = document.querySelector('.hidden');
+let hidden  = true;
 
 
-cacher.style.display = 'none'; //Cacher les nouvelles cachées par défaut
-cacher.style.overflow= 'hidden'; //Cacher toutce qui déborde
+cacher.style.display = 'none';
+cacher.style.overflow= 'hidden';
 
-btn_plus.addEventListener('click', () => { //Lorsque le bouton "Plus de nouvelles" est cliqué...
+btn_plus.addEventListener('click', () => {
   
-  if(hidden){ //Si Hidden est "TRUE"...
-    cacher.style.display = 'block'; //Il rendre la section de nouvelles cachées visible
+  if(hidden){
+    cacher.style.display = 'block';
     cacher.style.overflow= 'visible';
     hidden = false;
   } 
-  else{ //Sinon...
-    cacher.style.display = 'none'; //Il faut la garder cachée
+  else{
+    cacher.style.display = 'none';
     cacher.style.overflow= 'hidden';
     hidden = true;
   }
@@ -115,3 +88,48 @@ btn_plus.addEventListener('click', () => { //Lorsque le bouton "Plus de nouvelle
 
 
 
+/*Timeline pour HISTOIRE*/ 
+
+gsap.from('.One', {scrollTrigger: {markers: true,start: 'top 75%',end: 'bottom 25%',trigger: '.One',},
+  opacity:0,
+  x: '100%',
+  duration: 2,
+});
+
+gsap.from('.Two', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+   
+    trigger: '.Two',
+  },
+  opacity:0,
+  x: '-100%',
+  duration: 2,
+});
+gsap.from('.Three', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+   
+    trigger: '.Three',
+  },
+  opacity:0,
+  x: '100%',
+  duration: 2,
+});
+
+gsap.from('.Four', {
+  scrollTrigger: {
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+   
+    trigger: '.Four',
+  },
+  opacity:0,
+  x: '-100%',
+  duration: 2,
+});
