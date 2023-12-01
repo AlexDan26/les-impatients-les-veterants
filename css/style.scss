@@ -44,7 +44,7 @@ footer{
     color: white;
     text-align: center;
     box-shadow: 0px -5px 5px 2px rgba(0, 0, 0, 0.139);
-   
+   margin-top: 200px;
    //effet shadow
     .shadow{
         text-shadow: 2px 2px black;
@@ -53,22 +53,12 @@ footer{
 //logo footer
     .logo{
         width: 20%;
-        position: relative;
-        top: -30px;
-        left: 45%;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        background-color: #D1C8E4;
-      
-        border-radius: 50%;
- 
-        box-shadow: 0px -5px 5px -4px rgba(0, 0, 0, 0.091);
-
+       
+   
+        
 
         img{
-            background-color: #D1C8E4;
+          width: 100px;         
             padding: 10px;
             border-radius: 50%;
             z-index: -1;
