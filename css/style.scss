@@ -52,23 +52,18 @@ footer{
     }
 //logo footer
     .logo{
-        width: 20%;
-        position: relative;
-        top:100px;
-        left: 40%;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
+      display: flex;
+      justify-content: center;
         border-radius: 50%;
         
-
+      
         img{
-          width: 100px;         
+          width: 25%;         
             padding: 10px;
             border-radius: 50%;
             z-index: -1;
-        }
+        
+      }
     }
 
   //bouton don
@@ -143,6 +138,20 @@ footer{
             text-align: center;
         } 
          } 
+         .logo{
+      
+          border-radius: 50%;
+          
+        
+          img{
+            width: 40%;         
+              padding: 10px;
+              border-radius: 50%;
+              z-index: -1;
+          
+        }
+      }
+  
     }
    
     .mention{
