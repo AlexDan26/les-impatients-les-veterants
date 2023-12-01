@@ -101,6 +101,9 @@ const swiper = new Swiper('.caroussel', {
   centeredSlides: true,
   loop: true,
   spaceBetween: 40,
+  autoplay:{
+    delay: 3000
+  },
   //slidesPerView: 3,
 
   // If we need pagination
