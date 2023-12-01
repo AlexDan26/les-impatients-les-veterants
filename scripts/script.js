@@ -52,7 +52,13 @@ disableWarning();
 
 /*Timeline pour HISTOIRE*/ 
 
-gsap.from('.One', {scrollTrigger: {markers: true,start: 'top 75%',end: 'bottom 25%',trigger: '.One',},
+gsap.from('.One', {scrollTrigger: {
+  markers: true,
+  start: '60% 75%',
+  end: '75% 75%',
+  toggleActions: 'restart complete reverse ',
+  trigger: '.One',
+},
   opacity:0,
   x: '100%',
   duration: 2,
@@ -62,8 +68,8 @@ gsap.from('.Two', {
   scrollTrigger: {
     markers: true,
     start: 'top 75%',
-    end: 'bottom 25%',
-   
+    end: '75% 75%',
+    toggleActions: 'restart complete reverse ',
     trigger: '.Two',
   },
   opacity:0,
@@ -74,8 +80,8 @@ gsap.from('.Three', {
   scrollTrigger: {
     markers: true,
     start: 'top 75%',
-    end: 'bottom 25%',
-   
+    end: '75% 75%',
+    toggleActions: 'restart complete reverse ',
     trigger: '.Three',
   },
   opacity:0,
@@ -87,8 +93,8 @@ gsap.from('.Four', {
   scrollTrigger: {
     markers: true,
     start: 'top 75%',
-    end: 'bottom 25%',
-   
+    end: '75% 75%',
+    toggleActions: 'restart complete reverse',
     trigger: '.Four',
   },
   opacity:0,
