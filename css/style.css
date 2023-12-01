@@ -582,6 +582,14 @@ footer .shadow {
 }
 footer .logo {
   width: 20%;
+  position: relative;
+  top: 100px;
+  left: 40%;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  border-radius: 50%;
 }
 footer .logo img {
   width: 100px;
