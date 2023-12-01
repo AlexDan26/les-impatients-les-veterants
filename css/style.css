@@ -581,18 +581,12 @@ footer .shadow {
   text-shadow: 2px 2px black;
 }
 footer .logo {
-  width: 20%;
-  position: relative;
-  top: 100px;
-  left: 40%;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  display: flex;
+  justify-content: center;
   border-radius: 50%;
 }
 footer .logo img {
-  width: 100px;
+  width: 25%;
   padding: 10px;
   border-radius: 50%;
   z-index: -1;
@@ -656,6 +650,15 @@ footer .contact h1 {
 @media screen and (max-width: 576px) {
   footer .contact p {
     text-align: center;
+  }
+  footer .logo {
+    border-radius: 50%;
+  }
+  footer .logo img {
+    width: 40%;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: -1;
   }
 }
 footer .mention {
