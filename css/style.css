@@ -795,6 +795,9 @@ iframe {
   margin-right: 10px;
   height: fit-content;
 }
+.timeline ul li div h1 {
+  text-align: center;
+}
 .timeline ul li:nth-of-type(odd) > div {
   left: 45px;
 }
