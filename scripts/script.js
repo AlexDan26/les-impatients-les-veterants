@@ -49,44 +49,6 @@ function disableWarning(){
 };
 disableWarning();
 
-const swiper = new Swiper('.caroussel', {
-  // Optional parameters
-  direction: 'horizontal',
-  centeredSlides: true,
-  loop: true,
-  spaceBetween: 40,
-  //slidesPerView: 3,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-});
-
-
-let btn_plus    = document.querySelector('.plus');
-let cacher   = document.querySelector('.hidden');
-let hidden  = true;
-
-
-cacher.style.display = 'none';
-cacher.style.overflow= 'hidden';
-
-btn_plus.addEventListener('click', () => {
-  
-  if(hidden){
-    cacher.style.display = 'block';
-    cacher.style.overflow= 'visible';
-    hidden = false;
-  } 
-  else{
-    cacher.style.display = 'none';
-    cacher.style.overflow= 'hidden';
-    hidden = true;
-  }
-})
-
-
 
 /*Timeline pour HISTOIRE*/ 
 
@@ -133,3 +95,41 @@ gsap.from('.Four', {
   x: '-100%',
   duration: 2,
 });
+const swiper = new Swiper('.caroussel', {
+  // Optional parameters
+  direction: 'horizontal',
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 40,
+  //slidesPerView: 3,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
+
+
+let btn_plus    = document.querySelector('.plus');
+let cacher   = document.querySelector('.hidden');
+let hidden  = true;
+
+
+cacher.style.display = 'none';
+cacher.style.overflow= 'hidden';
+
+btn_plus.addEventListener('click', () => {
+  
+  if(hidden){
+    cacher.style.display = 'block';
+    cacher.style.overflow= 'visible';
+    hidden = false;
+  } 
+  else{
+    cacher.style.display = 'none';
+    cacher.style.overflow= 'hidden';
+    hidden = true;
+  }
+})
+
+
