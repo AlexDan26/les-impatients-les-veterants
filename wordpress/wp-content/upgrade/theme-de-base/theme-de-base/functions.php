@@ -47,11 +47,6 @@ function add_style_and_js()  {
 		2. get_template_directory_uri() . '/style.css' = Chemin où ce trouve le fichier CSS en question
 	*/
 	wp_enqueue_style('default', get_template_directory_uri() . '/style.css');
-	wp_enqueue_style('default', "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
-	wp_enqueue_style('default', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
-	wp_enqueue_style('font', "https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
-	wp_enqueue_style('default', "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-	
 
 	/* Pour ajoutez une feuille de style supplémentaire, copier la ligne précédente et ajuster le chemin du fichier de façon relative vers votre nouveau fichier CSS */
 
@@ -63,10 +58,7 @@ function add_style_and_js()  {
 		 5. true = Est-ce que le script doit-être ajouté à la fin du body. Si mis à false le script est ajouter dans le head à la place
 	*/
 	wp_enqueue_script('default', get_template_directory_uri() . '/main.js', array(), false, true);
-	wp_enqueue_script('default', "https://code.jquery.com/jquery-3.2.1.slim.min.js", array(), false, true);
-	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js", array(), false, true);
-	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js", array(), false, true);
-	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js", array(), false, true);
+
 	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
 
