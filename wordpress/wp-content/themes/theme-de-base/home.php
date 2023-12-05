@@ -1,6 +1,7 @@
 <?php
 /**
  * 	Template Name: Accueil
+ *  Template Post Type: service
  */
 get_header(); // Affiche header.php
 
@@ -15,7 +16,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 				<?php the_title(); // Titre de la page ?>
 			</h2>
 		<?php endif; ?>
-		
 		<?php the_content(); // Contenu principal de la page ?>
 	</article>
 <?php endwhile; // Fermeture de la boucle

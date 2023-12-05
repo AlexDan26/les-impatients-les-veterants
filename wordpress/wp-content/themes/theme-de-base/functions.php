@@ -66,7 +66,10 @@ function add_style_and_js()  {
 	wp_enqueue_script('default', "https://code.jquery.com/jquery-3.2.1.slim.min.js", array(), false, true);
 	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js", array(), false, true);
 	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js", array(), false, true);
+	wp_enqueue_script('default', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js", array(), false, true);
 	wp_enqueue_script('default', "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js", array(), false, true);
+	wp_enqueue_script('default', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.jss", array(), false, true);
+	wp_enqueue_script('default', "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js", array(), false, true);
 	/* Pour ajoutez un script, copier la ligne précédente et ajuster le chemin de façon relative vers votre nouveau fichier JS */
 }
 
