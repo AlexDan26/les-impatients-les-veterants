@@ -17,7 +17,20 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 			</h2>
 		<?php endif; ?>
 		<?php the_content(); // Contenu principal de la page ?>
+		
+
 	</article>
+	<article>
+	<?php
+  	$service = new WP_Query('post_type=service');
+  	while ($service->have_posts()) : $service->the_post(); 
+	?>
+    <h2 class="card__title">allo</h2>
+	<?php
+  endwhile; 
+  wp_reset_postdata(); 
+?>
+</article>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
