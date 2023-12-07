@@ -11,26 +11,49 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 ?>
 
 	<article>
-		<?php if (!is_front_page()) : // Si nous ne sommes PAS sur la page d'accueil ?>
-			<h2>
-				<?php the_title(); // Titre de la page ?>
-			</h2>
-		<?php endif; ?>
-		<?php the_content(); // Contenu principal de la page ?>
+	<div class="container">
+          <h1 class="top_title">Les impatients </h1>
+          <!--Titre et description-->
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le biais de l’expression
+                artistique.</p>
+        
+              <br>
+              <h2>CAMPAGNE DE LE VÉE DE FONDS
+                PARLE-MOI D’AMOUR ET D’ESPOIR</h2>
+              <p>Il y a quelques semaines, nous avons
+                fêté nos 30 ans. Pour notre
+                anniversaire, on a soufflé des
+                chandelles…et la maison a brûlé.
+                Aidez-nous à maintenir nos activités
+                et accueillir nos Impatients.</p>
+            </div>
+            <div class="col-12 col-md-4">
+              <img src="assets/imgIntro.png" class="imgIntro" alt="Image pour Intro">
+            </div>
+          </div>
+        </div>
+		<div class="container containCaroussel">
+      <!--Caroussel-->
+      <!-- Slider main container -->
+      <div class="swiper caroussel">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="assets/caroussel_1.png" alt="Art Caroussel 1"></div>
+          <div class="swiper-slide"><img src="assets/caroussel_2.png" alt="Art Caroussel 2"></div>
+          <div class="swiper-slide"><img src="assets/caroussel_3.png" alt="Art Caroussel 3"></div>
+          <div class="swiper-slide"><img src="assets/caroussel_4.png" alt="Art Caroussel 3"></div>
+          <div class="swiper-slide"><img src="assets/caroussel_5.png" alt="Art Caroussel 3"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
 		
 
 	</article>
-	<article>
-	<?php
-  	$service = new WP_Query('post_type=service');
-  	while ($service->have_posts()) : $service->the_post(); 
-	?>
-    <h2 class="card__title">allo</h2>
-	<?php
-  endwhile; 
-  wp_reset_postdata(); 
-?>
-</article>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
