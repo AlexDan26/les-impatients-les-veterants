@@ -65,7 +65,7 @@
       <div class="container">
         <!--Logo-->
         <a class="navbar-brand" href="index.html">
-          <img src="assets/logo.png">
+          <img src="<?php bloginfo('template_url'); ?>/assets/logo.png">
         </a>
         <!--Bouton hamburger-->
         <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav"
