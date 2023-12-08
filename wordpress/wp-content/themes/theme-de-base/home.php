@@ -30,7 +30,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 et accueillir nos Impatients.</p>
             </div>
             <div class="col-12 col-md-4">
-              <img src="assets/imgIntro.png" class="imgIntro" alt="Image pour Intro">
+              <img src="<?php bloginfo('template_url'); ?>/assets/imgIntro.png" class="imgIntro" alt="Image pour Intro">
             </div>
           </div>
         </div>
@@ -41,11 +41,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide"><img src="assets/caroussel_1.png" alt="Art Caroussel 1"></div>
-          <div class="swiper-slide"><img src="assets/caroussel_2.png" alt="Art Caroussel 2"></div>
-          <div class="swiper-slide"><img src="assets/caroussel_3.png" alt="Art Caroussel 3"></div>
-          <div class="swiper-slide"><img src="assets/caroussel_4.png" alt="Art Caroussel 3"></div>
-          <div class="swiper-slide"><img src="assets/caroussel_5.png" alt="Art Caroussel 3"></div>
+          <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/assets/caroussel_1.png" alt="Art Caroussel 1"></div>
+          <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/assets/caroussel_2.png" alt="Art Caroussel 2"></div>
+          <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/assets/caroussel_3.png" alt="Art Caroussel 3"></div>
+          <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/assets/caroussel_4.png" alt="Art Caroussel 3"></div>
+          <div class="swiper-slide"><img src="<?php bloginfo('template_url'); ?>/assets/caroussel_5.png" alt="Art Caroussel 3"></div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
