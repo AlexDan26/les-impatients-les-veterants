@@ -1,4 +1,4 @@
-Montmorency
+Les vétérants
 ===============
 
 Un thème de base pour bien commencer avec Wordpress
