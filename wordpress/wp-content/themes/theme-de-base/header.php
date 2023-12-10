@@ -61,11 +61,7 @@
 
 <header>
 <?php 
-  wp_nav_menu(array(
-    'theme_location' => 'main-menu'
-    'container' => 'nav',
-    'container_class' => 'menu-principal'
-  ));
+  wp_nav_menu(array('theme_location' => 'sponsors-menu'));
 ?>
 	<!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
