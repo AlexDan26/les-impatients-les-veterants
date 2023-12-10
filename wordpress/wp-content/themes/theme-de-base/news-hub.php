@@ -1,6 +1,7 @@
 <?php
 /**
  * 	Template Name: Hub de nouvelles
+ *  Template Post Type: post, page, groupe
  */
 get_header(); // Affiche header.php
 
