@@ -20,7 +20,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 artistique.</p>
         
               <br>
-              <h2>CAMPAGNE DE LE VÉE DE FONDS
+              <h2>CAMPAGNE DE LEVÉE DE FONDS
                 PARLE-MOI D’AMOUR ET D’ESPOIR</h2>
               <p>Il y a quelques semaines, nous avons
                 fêté nos 30 ans. Pour notre
@@ -52,7 +52,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
       </div>
     </div>
 
-    
+
     <div class="container">
       <!--Services-->
       <div class="row">
