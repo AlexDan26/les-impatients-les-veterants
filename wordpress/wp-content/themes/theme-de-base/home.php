@@ -10,7 +10,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	while ( have_posts() ) : the_post(); 
 ?>
 
-	<article>
+	<main>
 	<div class="container">
           <h1 class="top_title">Les impatients </h1>
           <!--Titre et description-->
@@ -51,9 +51,96 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
         <div class="swiper-pagination"></div>
       </div>
     </div>
-		
 
-	</article>
+    
+    <div class="container">
+      <!--Services-->
+      <div class="row">
+        <div class="acceuil service ">
+        <h2> Service offert</h2>
+        </div>       
+      </div>
+    </div>
+    <div class="container">
+          <!--Bouton pour service-->
+      <div class="service offert">
+      
+            <button class="button_service" type="button"> Ateliers</button>
+        
+            <button class="button_service" type="button"> Collection</button>
+          
+            <button class="button_service" type="button"> Évènements</button>
+         
+     
+      </div>
+    </div>
+
+
+
+    <div class="container">
+    <!--Nouvelle-->
+      <div class="row">
+        <div class="acceuil new">
+        <h2> Nouvelles récentes</h2>
+        </div>       
+      </div>
+    </div>
+    <!--card Nouvelle récente-->
+    <div class="container">
+      <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img  class="card-img-top" src="../assets/miroir_baniere.PNG" >
+          <div class="card-body vert">
+            <h3 class="card-title">Clôture de miroir miroir 2e édition</h3>
+            <p class="card-text"> Miroir Miroir est une démarche
+              artistique et philanthropique qui rassemble de façon ludique les gens
+              qui fréquentent nos ateliers et le public généreux. L’idée est simple
+              et efficace : voir le regard que porte sur soi une personne qui vit
+              des problèmes de santé mentale. Ainsi, un puissant échange est engagé,
+              en plus de supporter la tenue des ateliers artistiques, le cœur de
+              notre action.</p>
+            <a class="navbar-brand stretched-link" href="nouvelles.html"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img  class="card-img-top" src="../assets/miroir_baniere.PNG" >
+          <div class="card-body rose">
+            <h3 class="card-title">Clôture de miroir miroir 2e édition</h3>
+            <p class="card-text"> Miroir Miroir est une démarche
+              artistique et philanthropique qui rassemble de façon ludique les gens
+              qui fréquentent nos ateliers et le public généreux. L’idée est simple
+              et efficace : voir le regard que porte sur soi une personne qui vit
+              des problèmes de santé mentale. Ainsi, un puissant échange est engagé,
+              en plus de supporter la tenue des ateliers artistiques, le cœur de
+              notre action.</p>
+            <a class="navbar-brand stretched-link" href="nouvelles.html"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img  class="card-img-top" src="../assets/miroir_baniere.PNG" >
+          <div class="card-body bleu">
+            <h3 class="card-title">Clôture de miroir miroir 2e édition</h3>
+            <p class="card-text"> Miroir Miroir est une démarche
+              artistique et philanthropique qui rassemble de façon ludique les gens
+              qui fréquentent nos ateliers et le public généreux. L’idée est simple
+              et efficace : voir le regard que porte sur soi une personne qui vit
+              des problèmes de santé mentale. Ainsi, un puissant échange est engagé,
+              en plus de supporter la tenue des ateliers artistiques, le cœur de
+              notre action.</p>
+              <a class="navbar-brand stretched-link" href="nouvelles.html"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</main>
 <?php endwhile; // Fermeture de la boucle
 
 else : // Si aucune page n'a été trouvée
