@@ -60,6 +60,9 @@
 >
 
 <header>
+<?php 
+  wp_nav_menu(array('theme_location' => 'sponsors-menu'));
+?>
 	<!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
