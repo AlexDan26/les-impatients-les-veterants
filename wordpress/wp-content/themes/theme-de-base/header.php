@@ -5,41 +5,7 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex" />
 
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <!--Icônes Bootstrap-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <!--Scripts Bootstrap-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-  <!--Fichiers CSS Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!--Fichiers Script et CSS pours les carroussel-->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-  <!--Texte du titre de l'onglet-->
-  <title>Les Impatients</title>
-
-</head>
 <?php 
 	// Tous les .css et .js sont chargés dans le fichier functions.php
 ?>
@@ -61,21 +27,16 @@
 >
 
 <header>
-
-	<!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-   
-      <div class="container">
+<div class="container">
         <!--Logo-->
         <a class="navbar-brand" href="index.html">
-          <img src="<?php bloginfo('template_url'); ?>/assets/logo.png">
+          <img src="assets/logo.png">
         </a>
         <!--Bouton hamburger-->
         <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -91,10 +52,10 @@
               <a class="nav-link" href="apropos.html">À propos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="histoiry.html">Notre Histoire</a>
+              <a class="nav-link" href="histoire.html">Notre Histoire</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link" href="<?php echo esc_url(faq_url( '/' ) );faq.html ?>"title="<?php bloginfo( 'FAQ' ); ?>"></a>
             </li>
             <!--Bouton don-->
             <li class="nav-item">
@@ -113,15 +74,19 @@
                 </button>
               </a>
             </li>
+        </div>
+      </div>
+
+   
+  <nav>   
             <?php 
   wp_nav_menu(array(
     'theme_location' => 'main-menu',
-    'menu_class' => 'navbar-nav', // Classe CSS pour styliser le menu
+    'container' => 'nav', // Utiliser une balise nav pour le conteneur du menu
+    'container_class' => 'navbar navbar-expand-lg navbar-light bg-light',
   ));
 ?>
-        </div>
-      </div>  
-     </nav>
+  </nav>   
    
     
     <!--Bannière-->
@@ -139,3 +104,4 @@
 </header>
 
 <main><!-- Débute le contenu principal de notre site -->
+</main>
