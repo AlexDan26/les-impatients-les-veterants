@@ -7,7 +7,12 @@
 </main>
 
 <footer>
-
+<?php 
+  wp_nav_menu(array(
+    'theme_location' => 'footer-menu',
+    
+  ));
+?>
     <!--logo pour footer-->
   <div class="logo">
     <a class="navbar-brand" href="index.html">
