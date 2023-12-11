@@ -38,6 +38,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
   <!--Texte du titre de l'onglet-->
   <title>Les Impatients</title>
+
 </head>
 <?php 
 	// Tous les .css et .js sont chargés dans le fichier functions.php
@@ -60,11 +61,10 @@
 >
 
 <header>
-<?php 
-  wp_nav_menu(array('theme_location' => 'main-menu'));
-?>
+
 	<!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   
       <div class="container">
         <!--Logo-->
         <a class="navbar-brand" href="index.html">
@@ -75,6 +75,7 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -112,9 +113,17 @@
                 </button>
               </a>
             </li>
+            <?php 
+  wp_nav_menu(array(
+    'theme_location' => 'main-menu',
+    'menu_class' => 'navbar-nav', // Classe CSS pour styliser le menu
+  ));
+?>
         </div>
-      </div>
-    </nav>
+      </div>  
+     </nav>
+   
+    
     <!--Bannière-->
     <div class="container-fluid warning">
       <div class="row">
