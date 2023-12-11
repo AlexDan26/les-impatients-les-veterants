@@ -80,14 +80,10 @@
 
 </footer>
 <?php wp_footer(); 
-
 /* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
 	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
 	 Vous pouvez la déplacer si désiré, mais garder là. */
 	 
-?>
-<?php 
-  wp_nav_menu(array('theme_location' => 'footer-menu'));
 ?>
 
 </body>
