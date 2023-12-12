@@ -1,7 +1,7 @@
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Affiche l'entête (Header) sur toutes vos pages
-	/*-----------------------------------------------------------------------------------*/
+  /*-----------------------------------------------------------------------------------*/
+  /* Affiche l'entête (Header) sur toutes vos pages
+  /*-----------------------------------------------------------------------------------*/
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex" />
-
+ 
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,74 +39,50 @@
   <!--Texte du titre de l'onglet-->
   <title>Les Impatients</title>
 </head>
-<?php 
-	// Tous les .css et .js sont chargés dans le fichier functions.php
+<?php
+  // Tous les .css et .js sont chargés dans le fichier functions.php
 ?>
-
-<?php wp_head(); 
+ 
+<?php wp_head();
 /* Cette fonction permet à WordPress et aux extensions d'instancier des fichier CSS et js dans le <head>
-	 Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
-	 Vous pouvez la déplacer si désiré, mais garder là. */
+   Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress.
+   Vous pouvez la déplacer si désiré, mais garder là. */
 ?>
 </head>
-
-<body 
-	<?php body_class(); 
-	/* Applique une classe contextuel sur le body
-		 ex: sur la page d'accueil vous aurez la classe "home"
-		 sur un article, "single postid-{ID}"
-		 etc. */
-	?>
+ 
+<body
+  <?php body_class();
+  /* Applique une classe contextuel sur le body
+     ex: sur la page d'accueil vous aurez la classe "home"
+     sur un article, "single postid-{ID}"
+     etc. */
+  ?>
 >
-
+ 
 <header>
-	<!--Navigation-->
+  <!--Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="<?php echo home_url(); ?>">
+        <a class="navbar-brand" href="index.html">
           <img src="<?php bloginfo('template_url'); ?>/assets/logo.png">
         </a>
         <!--Bouton hamburger-->
-        <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-          
+        <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
         <?php
         wp_nav_menu(array(
-          'menu'            => 'main-menu',
+          'menu'            => 'menu-principal',
           'container'       => false,
-          'menu_id'         => false,
+          'menu_id'         => "menuNav",
           'menu_class'      => 'navbar-nav',
           'bootstrap'       => true
         ));
       ?>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="hub_services.html">Nos Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hub_nouvelle.html">Nos Nouvelles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="equipe.html">Équipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="apropos.html">À propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="histoiry.html">Notre Histoire</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <!--Bouton don-->
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <button class="buttonDonate" type="button">Faire un don</button></a>
-            </li>
+          <ul class="navbar-nav" id="menuNav">
             <!--Bouton langue-->
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -119,7 +95,8 @@
                 </button>
               </a>
             </li>
-        </div>
+          </div>
+      </ul>
       </div>
     </nav>
     <!--Bannière-->
@@ -135,5 +112,5 @@
       </div>
     </div>
 </header>
-
+ 
 <main><!-- Débute le contenu principal de notre site -->
