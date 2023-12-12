@@ -83,7 +83,7 @@
           'bootstrap'       => true
         ));
       ?>
-      <!--  <ul class="navbar-nav">
+        <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="hub_services.html">Nos Services</a>
             </li>
@@ -101,7 +101,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
-            </li>-->
+            </li>
             <!--Bouton don-->
             <li class="nav-item">
               <a class="nav-link" href="#">

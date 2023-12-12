@@ -4,87 +4,86 @@
 	/* Vous pouvez y ajouter des fonctions au besoin
 	/*-----------------------------------------------------------------------------------*/
 	
+/**
+ * Bootstrap 4 menus in WordPress via filters. No walker needed!
+ *
+ * @author Jake Bellacera <https://github.com/jakebellacera>
+ * 
+ * Instructions:
+ *   1. Drop this in your theme's functions.php.
+ *   2. Add 'bootstrap' => true to your wp_nav_menu args.
+ * 
+ * Example:
+ *   <?php wp_nav_menu(array('menu' => 'header', 'bootstrap' => true)); ?>
+ */
 
-	/**
-	 * Bootstrap 4 menus dans WordPress via des filtres. Pas besoin de déambulateur !
-	 *
-	 * @author Jake Bellacera <https://github.com/jakebellacera>
-	 * 
-	 *Instructions:
-	 * 1. Déposez ceci dans les fonctions de votre thème.php.
-	 * 2. Ajoutez 'bootstrap' => true à vos arguments wp_nav_menu.
-	 * 
-	 *Exemple:
-	 * < ?php wp_nav_menu(array('menu' => 'header', 'bootstrap' => true)) ; ?>
-	 */
-	
-	/**
-	 * Ajouter des classes d’amorçage aux éléments individuels de la liste de menu
-	 */
-	
-	function filter_bootstrap_nav_menu_css_class($classes, $item, $args) {
-	  if (isset($args->bootstrap)) {
-		$classes[] = 'élément-navigation';
-	
-		if (in_array('menu-item-a-des-enfants', $classes)) {
-		  $classes[] = 'liste déroulante';
+/**
+ * Add bootstrap classes to individual menu list items
+ */
+
+function filter_bootstrap_nav_menu_css_class($classes, $item, $args) {
+	if (isset($args->bootstrap)) {
+	  $classes[] = 'nav-item';
+  
+	  if (in_array('menu-item-has-children', $classes)) {
+		$classes[] = 'dropdown';
+	  }
+  
+	  if (in_array('dropdown-header', $classes)) {
+		unset($classes[array_search('dropdown-header', $classes)]);
+	  }
+	}
+	return $classes;
+  }
+  add_filter('nav_menu_css_class', 'filter_bootstrap_nav_menu_css_class', 10, 3);
+  
+  /**
+   * Add bootstrap attributes to individual link elements.
+   */
+  
+  function filter_bootstrap_nav_menu_link_attributes($atts, $item, $args, $depth) {
+	if (isset($args->bootstrap)) {
+	  if (!$atts['class']) {
+		$atts['class'] = '';
+	  }
+  
+	  if ($depth > 0) {
+		if (in_array('dropdown-header', $item->classes)) {
+		  $atts['class'] = 'dropdown-header';
+		} else {
+		  $atts['class'] .= 'dropdown-item';
 		}
-	
-		if (in_array('en-tête-déroulant', $classes)) {
-	 unset($classes[array_search('en-tête-déroulant', $classes)]);
+  
+		if ($item->description) {
+		  $atts['class'] .= ' has-description';
+		}
+	  } else {
+		$atts['class'] .= 'nav-link';
+  
+		if (in_array('menu-item-has-children', $item->classes)) {
+		  $atts['class'] .= ' dropdown-toggle';
+		  $atts['role'] = 'button';
+		  $atts['data-toggle'] = 'dropdown';
+		  $atts['aria-haspopup'] = 'true';
+		  $atts['aria-expanded'] = 'false';
 		}
 	  }
-	  return $classes;
 	}
-	add_filter('nav_menu_css_class', 'filter_bootstrap_nav_menu_css_class', 10, 3);
-	
-	/**
-	 * Ajouter des attributs d’amorçage à des éléments de lien individuels.
-	 */
-	
-	function filter_bootstrap_nav_menu_link_attributes($atts, $item, $args, $depth) {
-	  if (isset($args->bootstrap)) {
-		si ( !$atts['classe']) {
-		  $atts['classe'] = '';
-		}
-	
-		if ($profondeur > 0) {
-		  if (in_array('en-tête-déroulant', $item->classes)) {
-			$atts['class'] = 'en-tête-déroulant';
-		  } autre {
-			$atts['classe'] .= 'élément-déroulant';
-		  }
-	
-		  if ($item->description) {
-			$atts['classe'] .= ' description-has';
-		  }
-		} autre {
-		  $atts['classe'] .= 'lien-navigation';
-	
-		  if (in_array('menu-item-has-children', $item->classes)) {
-			$atts['classe'] .= ' bascule déroulante';
-			$atts['rôle'] = 'bouton';
-			$atts['données-bascule'] = 'liste déroulante';
-			$atts['aria-haspopup'] = 'vrai';
-			$atts['aria-expanded'] = 'false';
-		  }
-		}
-	  }
-	  retour $atts;
+	return $atts;
+  }
+  add_filter('nav_menu_link_attributes', 'filter_bootstrap_nav_menu_link_attributes', 10, 4);
+  
+  /**
+   * Add bootstrap classes to dropdown menus.
+   */
+  
+  function filter_bootstrap_nav_menu_submenu_css_class($classes, $args, $depth) {
+	if (isset($args->bootstrap)) {
+	  $classes[] = 'dropdown-menu';
 	}
-	add_filter('nav_menu_link_attributes', 'filter_bootstrap_nav_menu_link_attributes', 10, 4);
-	
-	/**
-	 * Ajouter des classes d’amorçage aux menus déroulants.
-	 */
-	
-	function filter_bootstrap_nav_menu_submenu_css_class($classes, $args, $depth) {
-	  if (isset($args->bootstrap)) {
-		$classes[] = 'menu déroulant';
-	  }
-	  return $classes;
-	}
-	add_filter('nav_menu_submenu_css_class', 'filter_bootstrap_nav_menu_submenu_css_class', 10, 3);
+	return $classes;
+  }
+  add_filter('nav_menu_submenu_css_class', 'filter_bootstrap_nav_menu_submenu_css_class', 10, 3);
 	
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
