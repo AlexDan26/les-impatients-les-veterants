@@ -3,7 +3,89 @@
 	/* Ce fichier est présent sur chaque page
 	/* Vous pouvez y ajouter des fonctions au besoin
 	/*-----------------------------------------------------------------------------------*/
+	
 
+	/**
+	 * Bootstrap 4 menus dans WordPress via des filtres. Pas besoin de déambulateur !
+	 *
+	 * @author Jake Bellacera <https://github.com/jakebellacera>
+	 * 
+	 *Instructions:
+	 * 1. Déposez ceci dans les fonctions de votre thème.php.
+	 * 2. Ajoutez 'bootstrap' => true à vos arguments wp_nav_menu.
+	 * 
+	 *Exemple:
+	 * < ?php wp_nav_menu(array('menu' => 'header', 'bootstrap' => true)) ; ?>
+	 */
+	
+	/**
+	 * Ajouter des classes d’amorçage aux éléments individuels de la liste de menu
+	 */
+	
+	function filter_bootstrap_nav_menu_css_class($classes, $item, $args) {
+	  if (isset($args->bootstrap)) {
+		$classes[] = 'élément-navigation';
+	
+		if (in_array('menu-item-a-des-enfants', $classes)) {
+		  $classes[] = 'liste déroulante';
+		}
+	
+		if (in_array('en-tête-déroulant', $classes)) {
+	 unset($classes[array_search('en-tête-déroulant', $classes)]);
+		}
+	  }
+	  return $classes;
+	}
+	add_filter('nav_menu_css_class', 'filter_bootstrap_nav_menu_css_class', 10, 3);
+	
+	/**
+	 * Ajouter des attributs d’amorçage à des éléments de lien individuels.
+	 */
+	
+	function filter_bootstrap_nav_menu_link_attributes($atts, $item, $args, $depth) {
+	  if (isset($args->bootstrap)) {
+		si ( !$atts['classe']) {
+		  $atts['classe'] = '';
+		}
+	
+		if ($profondeur > 0) {
+		  if (in_array('en-tête-déroulant', $item->classes)) {
+			$atts['class'] = 'en-tête-déroulant';
+		  } autre {
+			$atts['classe'] .= 'élément-déroulant';
+		  }
+	
+		  if ($item->description) {
+			$atts['classe'] .= ' description-has';
+		  }
+		} autre {
+		  $atts['classe'] .= 'lien-navigation';
+	
+		  if (in_array('menu-item-has-children', $item->classes)) {
+			$atts['classe'] .= ' bascule déroulante';
+			$atts['rôle'] = 'bouton';
+			$atts['données-bascule'] = 'liste déroulante';
+			$atts['aria-haspopup'] = 'vrai';
+			$atts['aria-expanded'] = 'false';
+		  }
+		}
+	  }
+	  retour $atts;
+	}
+	add_filter('nav_menu_link_attributes', 'filter_bootstrap_nav_menu_link_attributes', 10, 4);
+	
+	/**
+	 * Ajouter des classes d’amorçage aux menus déroulants.
+	 */
+	
+	function filter_bootstrap_nav_menu_submenu_css_class($classes, $args, $depth) {
+	  if (isset($args->bootstrap)) {
+		$classes[] = 'menu déroulant';
+	  }
+	  return $classes;
+	}
+	add_filter('nav_menu_submenu_css_class', 'filter_bootstrap_nav_menu_submenu_css_class', 10, 3);
+	
 /* --------------------------------
 Ajoute les vignettes dans les posts de type Article */
 add_theme_support( 'post-thumbnails' );

@@ -64,16 +64,26 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <!--Logo-->
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="<?php echo home_url(); ?>">
           <img src="<?php bloginfo('template_url'); ?>/assets/logo.png">
         </a>
         <!--Bouton hamburger-->
-        <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-controls="navbarNav" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+          
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <?php
+        wp_nav_menu(array(
+          'menu'            => 'main-menu',
+          'container'       => false,
+          'menu_id'         => false,
+          'menu_class'      => 'navbar-nav',
+          'bootstrap'       => true
+        ));
+      ?>
+      <!--  <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="hub_services.html">Nos Services</a>
             </li>
@@ -91,7 +101,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
+            </li>-->
             <!--Bouton don-->
             <li class="nav-item">
               <a class="nav-link" href="#">
