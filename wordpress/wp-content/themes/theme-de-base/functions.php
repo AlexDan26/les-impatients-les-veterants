@@ -76,6 +76,7 @@ function add_style_and_js()  {
 /* Appel de la fonction ajoutant les styles et scripts */
 add_action('wp_enqueue_scripts', 'add_style_and_js');
  
+wp_nav_menu([  'theme_location'=> 'main-menu',  'menu_class'    => 'navbar-nav',  'list_item_class'  => 'nav-item',  'link_item_class'     => 'nav-link',]);
 /** Cours 7 - 11 octobre 2023 : Ajout d'e filtres utilitaires pour Bootstrap NavBar */
 // Pour ajouter sur les <li>
 function add_menu_list_item_class($classes, $item, $args) {
@@ -94,6 +95,8 @@ function add_menu_list_item_class($classes, $item, $args) {
 }
 add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
  
+
+
 function filter_bootstrap_nav_menu_css_class($classes, $item, $args) {
   if (isset($args->bootstrap)) {
     $classes[] = 'nav-item';
