@@ -122,8 +122,8 @@ let btn_plus    = document.querySelector('.plus'); //Bouton pour plus de nouvell
 let cacher   = document.querySelector('.hidden'); //La section de nouvelles cachées
 let hidden  = true;
 
-fetch("/les-impatients-localo/wordpress/wp-json/wp/v2/nouvelles?nouvelle=nouvelles/")
-  .then(response => response.json())
+/*fetch("/les-impatients-localo/wordpress/wp-json/wp/v2/nouvelles?nouvelle=nouvelles/")
+  .then(response => response.json())*/
 
 cacher.style.display = 'none'; //Cacher les nouvelles cachées par défaut
 cacher.style.overflow= 'hidden'; //Cacher toutce qui déborde
