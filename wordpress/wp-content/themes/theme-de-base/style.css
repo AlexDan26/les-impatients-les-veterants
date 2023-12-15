@@ -153,9 +153,13 @@ main {
 }
 /*Partials de composantes*/
 .card {
+  height: 100%;
   margin: 10px auto 10px;
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 20px 20px;
+}
+.espaceEntreNouvelles{
+  margin-top:30px;
 }
 .card:hover {
   scale: 1.03;
@@ -204,7 +208,7 @@ button.buttonLangue {
   background-color: #FDDDe3;
 }
 button.plus {
-  margin: 10px;
+  margin: 30px 10px 10px 10px;
   padding: 10px;
 }
 button.button_service {

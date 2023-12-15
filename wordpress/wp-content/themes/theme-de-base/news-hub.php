@@ -31,9 +31,9 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             <!-- 👆 Début boucle while -->
            
                 <!--CARD NOUVELLE-->
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 espaceEntreNouvelles">
                     <div class="card <?php the_field('first'); ?>">
-                        <img class="card-img-top" src="<?php the_post_thumbnail('medium'); ?>"></img>
+                        <img style="object-fit: contain" class="card-img-top" src="<?php the_post_thumbnail('medium'); ?>
                         <div class="card-body <?php the_field('couleur'); ?>">
                             <h3 class="card-title"><?php the_field('titre'); ?></h3>
                             <p class="card-text"><?php the_field('description'); ?></p>
@@ -48,6 +48,12 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             wp_reset_postdata();
             ?>
         </div>
+
+        <div class="container">
+        <div class="buttonspace">
+              <button class="plus">Voir plus de nouvelles</button>
+            </div>
+            </div>
     
 </article>
 <?php endwhile; // Fermeture de la boucle
