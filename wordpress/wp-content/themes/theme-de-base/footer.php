@@ -8,15 +8,15 @@
 
 <footer>
 <?php 
-  wp_nav_menu(array(
+  /*wp_nav_menu(array(
     'theme_location' => 'footer-menu',
     
-  ));
+  ));*/
 ?>
     <!--logo pour footer-->
   <div class="logo">
-    <a class="navbar-brand" href="index.html">
-      <img src="assets/impatient_noir.png">
+    <a class="navbar-brand" href="https://les-veterans.tim-momo.com/wordpress/messageintro/les-impatients/">
+      <img src="<?php bloginfo('template_url'); ?>/assets/impatient_noir.png">
     </a>
   </div>
 
@@ -32,17 +32,17 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-sm-12 col-md-6">
-                  <img class="img-fluid" src="assets/logo_Desjardins.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Capinabel.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Dutton.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Fiera.png" alt="">
+                  <a href="https://www.desjardins.com/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Desjardins.png" alt=""></a>
+                  <a href="https://www.bloomberg.com/profile/company/0244431D:CN"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Capinabel.png" alt=""></a><!--Désolé, on a vraiment rien trouvé au sujet de leur site Web-->
+                  <a href="https://www.canadahelps.org/fr/organismesdebienfaisance/fondation-robert-dutton/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Dutton.png" alt=""></a>
+                  <a href="https://www.fieracapital.com/fr"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Fiera.png" alt=""></a>
                 </div>
 
                 <div class="col-12  col-md-6">
-                  <img class="img-fluid" src="assets/logo_Perron.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Phaneuf.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Phila.png" alt="">
-                  <img class="img-fluid" src="assets/logo_Qc.png" alt="">
+                  <a href="https://nesbittburns.bmo.com/gerald.perron/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Perron.png" alt=""></a>
+                  <a href="https://phaneuf.ca/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Phaneuf.png" alt=""></a>
+                  <a href="https://www.canadahelps.org/fr/organismesdebienfaisance/fondation-phila/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Phila.png" alt=""></a>
+                  <a href="https://www.ophq.gouv.qc.ca/"><img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/logo_Qc.png" alt=""></a>
                 </div>
             </div>
           </div>
@@ -51,8 +51,10 @@
 
             <!--bouton de donation-->
       <div class="col-12 col-md-4">
+        <a class="nav-link" href="https://impatients.ca/faire-un-don/">
         <div class="buttonspace buttonDonateFoot"><button>Faire un don</button>
         </div>
+        </a>
       </div>
             <!--section contact-->
       <div class="col-12 col-md-4 ">

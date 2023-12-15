@@ -1,4 +1,4 @@
-Les impatients
+Montmorency
 ===============
 
 Un thème de base pour bien commencer avec Wordpress

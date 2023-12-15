@@ -26,11 +26,11 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
             </div>
 
             <!--IMAGES ARTICLES-->
-            <img itemprop="image" class="hero" src="<?php the_post_thumbnail('medium'); ?>">
-			<!--titre ARTICLES-->
+            <img itemprop="image" class="hero" src="<?php the_post_thumbnail('large'); ?>"></img>
+            <!--titre ARTICLES-->
             <h2 itemprop="name" class="article title"><?php the_field('titre'); ?></h2>
             <!--date-->
-			<p  class="article texte"><?php the_field('date'); ?></p>
+            <p class="article texte"><?php the_field('date'); ?></p>
             <!--DESCRIPTION-->
             <p itemprop="description" class="article texte"><?php the_field('description'); ?></p>
             <!--SOUS-TITRE-->

@@ -33,7 +33,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                 <!--CARD NOUVELLE-->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card <?php the_field('first'); ?>">
-                        <img class="card-img-top" src="<?php the_post_thumbnail('medium'); ?>
+                        <img class="card-img-top" src="<?php the_post_thumbnail('medium'); ?>"></img>
                         <div class="card-body <?php the_field('couleur'); ?>">
                             <h3 class="card-title"><?php the_field('titre'); ?></h3>
                             <p class="card-text"><?php the_field('description'); ?></p>
